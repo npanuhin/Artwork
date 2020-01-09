@@ -1,0 +1,15 @@
+{
+    "render_sizes": {
+        "Icon 16x16": [null, "16"],
+        "Icon 24x24": [null, "24"],
+        "Icon 32x32": [null, "32"],
+        "Icon 40x40": [null, "40"],
+        "Icon 48x48": [null, "48"],
+        "Icon 64x64": [null, "64"],
+        "Icon 96x96": [null, "96"],
+        "Icon 128x128": [null, "128"],
+        "Icon 256x256": [null, "256"],
+        "Image 512x512": [null, "512"],
+        "Image 1024x1024": [null, "1024"]
+    }
+}
