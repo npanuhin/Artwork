@@ -1,8 +1,10 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-	<linearGradient id="Grey_1_" gradientUnits="userSpaceOnUse" x1="45.9926" y1="6.25" x2="45.9926" y2="29.7647">
-		<stop offset="0" style="stop-color:#252525"/>
-		<stop offset="1" style="stop-color:#414141"/>
-	</linearGradient>
+	<defs>
+		<linearGradient id="Grey_1_" gradientUnits="userSpaceOnUse" x1="45.9926" y1="6.25" x2="45.9926" y2="29.7647">
+			<stop offset="0" style="stop-color:#252525"/>
+			<stop offset="1" style="stop-color:#414141"/>
+		</linearGradient>
+	</defs>
 	<style type="text/css">
 		.st0{fill:#244078;}
 		.st1{fill:#235ED5;}
