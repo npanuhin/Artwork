@@ -1,6 +1,6 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
 	<defs>
-		<linearGradient id="Grey_1_" gradientUnits="userSpaceOnUse" x1="45.9926" y1="6.25" x2="45.9926" y2="29.7647">
+		<linearGradient id="lg0" gradientUnits="userSpaceOnUse" x1="45.9926" y1="6.25" x2="45.9926" y2="29.7647">
 			<stop offset="0" style="stop-color:#252525"/>
 			<stop offset="1" style="stop-color:#414141"/>
 		</linearGradient>
@@ -13,7 +13,7 @@
 		.st4{fill:#CFCFCF;}
 		.st5{fill:#DEDEDE;}
 		.st6{fill:#252525;}
-		.st7{fill:url(#Grey_1_);}
+		.st7{fill:url(#lg0);}
 		.st8{fill:#676767;}
 	</style>
 	<path class="st0" d="M4.982,50.518c-0.469,0.469-0.732,1.105-0.732,1.768V58.5c0,0.083,0.008,0.526,0.366,0.884C4.974,59.742,5.417,59.75,5.5,59.75h6.214c0.663,0,1.299-0.263,1.768-0.732L31.5,41l-12.75-4.25L4.982,50.518z"/>

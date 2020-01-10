@@ -1,4 +1,5 @@
-from sys import path as sys_path
+from typing import List
+
 from json import loads
 import os
 from bs4 import BeautifulSoup
@@ -8,15 +9,18 @@ import render
 render.TMP_FOLDER = "rendertmp"
 
 
-def make_path(*paths):
+def make_path(*paths: List[str]) -> str:
+    '''Combines paths and normalizes the result'''
     return os.path.normpath(os.path.join(*paths))
 
 
 # def githubPages():
+#     '''Updates Github Pages'''
 #     print("Updating Github Pages...")
 
 
-def renderNew():
+def renderAll() -> None:
+    '''Renders all SVG files'''
     print("Rendering files...")
     rp = root_path
 
@@ -50,6 +54,13 @@ def renderNew():
             svg_path = make_path(rp, "SVG", image, svg_filename)
             output_path = make_path(render_path, svg_basename + ".png")
 
+            if svg_basename.endswith(".colored"):
+                output_name = "{i}) {name} ({rw}x{rh}).colored.png"
+                svg_basename = svg_basename[:-8]
+            else:
+                output_name = "{i}) {name} ({rw}x{rh}).png"
+
+            # SVG sizes
             with open(svg_path, 'r', encoding='utf-8') as svg_file_data:
                 svg_data = svg_file_data.read()
             image_sizes = BeautifulSoup(svg_data, "lxml").find("svg").get('viewbox').split()
@@ -58,35 +69,25 @@ def renderNew():
 
             index_length = len(str(len(sizes)))
             index = 1
-            for name, size in sizes.items():
-                x, y = size
+            for name, (x, y) in sizes.items():
                 if not ((type(x) is str) ^ (type(y) is str) and (x is None) ^ (y is None)):
                     print("Warning! Can not handle due to invalid parameters: \"" + svg_path + "\"")
                     continue
 
                 if type(x) is str:
-                    x = eval(x.format(w=width, h=height))
-                    render.renderSvg(
-                        svg_path, output_path,
-                        width=x
-                    )
+                    # Render using width
+                    render.renderSvg(svg_path, output_path, width=eval(x.format(w=width, h=height)))
                 else:
-                    y = eval(y.format(w=width, h=height))
-                    render.renderSvg(
-                        svg_path, output_path,
-                        height=y
-                    )
+                    # Render using height
+                    render.renderSvg(svg_path, output_path, height=eval(y.format(w=width, h=height)))
 
+                # Result image sizes
                 result_width, result_height = Image.open(output_path).size
 
-                if svg_basename.endswith(".colored"):
-                    os.rename(output_path, make_path(render_path, "{i}) {name} ({rw}x{rh}).colored.png".format(
-                        i=str(index).zfill(index_length), rw=result_width, rh=result_height, name=svg_basename[:-8]
-                    )))
-                else:
-                    os.rename(output_path, make_path(render_path, "{i}) {name} ({rw}x{rh}).png".format(
-                        i=str(index).zfill(index_length), rw=result_width, rh=result_height, name=svg_basename
-                    )))
+                # Save with correct name
+                os.rename(output_path, make_path(render_path, output_name.format(
+                    i=str(index).zfill(index_length), name=svg_basename, rw=result_width, rh=result_height
+                )))
 
                 print("{name} (width: {w}, height: {h}) rendered as png image (width: {rw}, height: {rh})".format(
                     name=svg_filename,
@@ -97,20 +98,23 @@ def renderNew():
                 index += 1
 
 
-def main():
+def main() -> None:
     print("Starting build...")
 
-    renderNew()
+    renderAll()
 
     print("Build complete.")
 
 
-# --SETTINGS-- #
+# ---SETTINGS--- #
 
+# Delete old rendered files
 remove_old_files = True
+
+# Path to the root of repository
 root_path = "..\\..\\"
 
-# --SETTINGS-- #
+# ---SETTINGS--- #
 
 
 if __name__ == "__main__":

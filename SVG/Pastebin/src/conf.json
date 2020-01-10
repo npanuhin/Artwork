@@ -10,6 +10,8 @@
         "Icon 128x128": [null, "128"],
         "Icon 256x256": [null, "256"],
         "Image 512x512": [null, "512"],
-        "Image 1024x1024": [null, "1024"]
+        "Image 1024x1024": [null, "1024"],
+        "Image 2048x2048": [null, "2048"],
+        "Image 4096x4096": [null, "4096"]
     }
 }
