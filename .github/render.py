@@ -29,7 +29,7 @@ def renderSvg(path_in: str, path_out: str, width: Optional[int] = None, height: 
 
     command = "convert-svg-to-png {size} \"{fin}\"".format(
         fin=fin,
-        size="--width " + str(width) if width is not None else "--height " + str(height)
+        size="--width " + str(width) if height is None else "--height " + str(height)
     )
     s = Popen(command, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE).communicate()
 

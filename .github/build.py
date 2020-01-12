@@ -18,16 +18,41 @@ def make_path(*paths: List[str]) -> str:
 # def githubPages():
 #     '''Updates Github Pages'''
 #     print("Updating Github Pages...")
+#     rp = root_path
+
+#     # ---Images---
+#     with open(make_path(rp, ".github/html/image.html"), 'r', encoding='utf-8') as file:
+#         html_template = file.read().strip()
+
+#     for image in os.listdir(make_path(rp, "SVG")):
+#         if not os.path.exists(make_path(rp, "SVG", image, "src/conf.json")):
+#             continue
+
+#         # with open(make_path(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
+#         #     conf_data = loads(conf_file.read(), encoding="utf-8")
+
+#         html_path = make_path(rp, "SVG", image, "index.html")
+#         cur_html = html_template
+#         # --Replace:
+#         cur_html = cur_html.format(
+#             image_name=image
+#         )
+
+#         # Save
+#         with open(html_path, 'w', encoding='utf-8') as file:
+#             file.write(cur_html.strip())
+
+#         print("Created index.html for {name}".format(name=image))
 
 
 def renderAll() -> None:
     '''Renders all SVG files'''
     print("Rendering files...")
     rp = root_path
-    re_find = re.compile(r"^\d+\)[A-Za-zА-Яа-я0-9 \/\\\t\-\+=\*\)\(\.<>\?\,\%\$\#\@\!\^\;\"\'\`\~]+\((\d+)x(\d+)\)(?:\.colored)?\.png$")
+    re_find = re.compile(r"^\d+\)[A-Za-zА-Яа-я0-9 \/\\\t\-\+=\*\)\(\.<>\?\,\%\$\#\@\!\^\;\"\'\`\~]+\((\d+)x(\d+)\)\.png$")
+    re_find_colored = re.compile(r"^\d+\)[A-Za-zА-Яа-я0-9 \/\\\t\-\+=\*\)\(\.<>\?\,\%\$\#\@\!\^\;\"\'\`\~]+\((\d+)x(\d+)\)\.colored\.png$")
 
     for image in os.listdir(make_path(rp, "SVG")):
-
         if not os.path.exists(make_path(rp, "SVG", image, "src/conf.json")):
             continue
 
@@ -56,16 +81,19 @@ def renderAll() -> None:
             svg_path = make_path(rp, "SVG", image, svg_filename)
             output_path = make_path(render_path, svg_basename + ".png")
 
-            not_rendered = []
-            if not update_old_files:
-                for filename in os.listdir(render_path):
-                    matches = re_find.match(filename)
-                    if matches:
-                        not_rendered.append([int(matches.group(1)), int(matches.group(2))])
-
-            # continue
-
             # List of sizes, that are already rendered
+            not_render = []
+            if not update_old_files:
+                if svg_basename.endswith(".colored"):
+                    for filename in os.listdir(render_path):
+                        matches = re_find_colored.match(filename)
+                        if matches:
+                            not_render.append([int(matches.group(1)), int(matches.group(2))])
+                else:
+                    for filename in os.listdir(render_path):
+                        matches = re_find.match(filename)
+                        if matches:
+                            not_render.append([int(matches.group(1)), int(matches.group(2))])
 
             if svg_basename.endswith(".colored"):
                 output_name = "{i}) {name} ({rw}x{rh}).colored.png"
@@ -94,7 +122,7 @@ def renderAll() -> None:
                     y = eval(y.format(w=width, h=height))
 
                 flag = False
-                for test_x, test_y in not_rendered:
+                for test_x, test_y in not_render:
                     if (y is None and test_x == x) or (x is None and test_y == y):
                         flag = True
                         break
@@ -127,6 +155,7 @@ def main() -> None:
     print("Starting build...")
 
     renderAll()
+    # githubPages()
 
     print("Build complete.")
 
@@ -137,7 +166,7 @@ def main() -> None:
 update_old_files = False
 
 # Path to the root of repository
-root_path = "..\\..\\"
+root_path = "..\\"
 
 # ---SETTINGS--- #
 
