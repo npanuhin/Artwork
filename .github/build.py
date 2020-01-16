@@ -5,6 +5,7 @@ import os
 from bs4 import BeautifulSoup
 from PIL import Image
 import re
+from ast import literal_eval
 
 import render
 render.TMP_FOLDER = "rendertmp"
@@ -15,34 +16,33 @@ def make_path(*paths: List[str]) -> str:
     return os.path.normpath(os.path.join(*paths))
 
 
-# def githubPages():
-#     '''Updates Github Pages'''
-#     print("Updating Github Pages...")
-#     rp = root_path
+def githubPages():
+    '''Updates Github Pages'''
+    print("Updating Github Pages...")
+    rp = root_path
 
-#     # ---Images---
-#     with open(make_path(rp, ".github/html/image.html"), 'r', encoding='utf-8') as file:
-#         html_template = file.read().strip()
+    # ---Images---
+    with open(make_path(rp, ".github/html/image.html"), 'r', encoding='utf-8') as file:
+        html_template = file.read().strip()
 
-#     for image in os.listdir(make_path(rp, "SVG")):
-#         if not os.path.exists(make_path(rp, "SVG", image, "src/conf.json")):
-#             continue
+    for image in os.listdir(make_path(rp, "SVG")):
+        if not os.path.exists(make_path(rp, "SVG", image, "src/conf.json")):
+            continue
 
-#         # with open(make_path(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
-#         #     conf_data = loads(conf_file.read(), encoding="utf-8")
+        # with open(make_path(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
+        #     conf_data = loads(conf_file.read(), encoding="utf-8")
 
-#         html_path = make_path(rp, "SVG", image, "index.html")
-#         cur_html = html_template
-#         # --Replace:
-#         cur_html = cur_html.format(
-#             image_name=image
-#         )
+        html_path = make_path(rp, "SVG", image, "index.html")
+        cur_html = html_template
+        # --Replace:
 
-#         # Save
-#         with open(html_path, 'w', encoding='utf-8') as file:
-#             file.write(cur_html.strip())
+        # Some work here
 
-#         print("Created index.html for {name}".format(name=image))
+        # Save
+        with open(html_path, 'w', encoding='utf-8') as file:
+            file.write(cur_html.strip())
+
+        print("Created index.html for {name}".format(name=image))
 
 
 def renderAll() -> None:
@@ -110,16 +110,16 @@ def renderAll() -> None:
 
             index_length = len(str(len(sizes)))
             index = 0
-            for name, (x, y) in sizes.items():
+            for x, y in sizes.values():
                 index += 1
-                if not ((type(x) is str) ^ (type(y) is str) and (x is None) ^ (y is None)):
+                if not (isinstance(x, str) ^ isinstance(y, str) and (x is None) ^ (y is None)):
                     print("Warning! Can not handle due to invalid parameters: \"" + svg_path + "\"")
                     continue
 
                 if y is None:
-                    x = eval(x.format(w=width, h=height))
+                    x = literal_eval(x.format(w=width, h=height))
                 else:
-                    y = eval(y.format(w=width, h=height))
+                    y = literal_eval(y.format(w=width, h=height))
 
                 flag = False
                 for test_x, test_y in not_render:
