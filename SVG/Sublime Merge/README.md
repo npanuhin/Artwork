@@ -7,9 +7,6 @@
 	<img src="Sublime Merge.colored.svg" alt="Sublime Merge colored icon" title="Sublime Merge colored icon">
 </div>
 
-
 ## Description
-
-
 
 ### Templates

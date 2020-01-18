@@ -13,7 +13,6 @@ You can use any of these images in your projects, works etc within the confines 
 
 **[Start exploring!](./SVG "See SVG images")**
 
-
 **If you think that you have found a mistake or have sufficiently improved (including minification) something in this repository, you are very welcome to contact me [here](http://n-panuhin.info "Nikita Panuhin") or directly by [email](mailto:n.panuhin@mail.ru "Mailto: Nikita Panuhin").**
 
 ## Technical information

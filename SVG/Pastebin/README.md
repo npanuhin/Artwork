@@ -7,9 +7,6 @@
 	<img src="Pastebin.colored.svg" alt="Pastebin colored icon" title="Pastebin colored icon">
 </div>
 
-
 ## Description
-
-
 
 ### Templates

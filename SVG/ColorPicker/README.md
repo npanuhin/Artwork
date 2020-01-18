@@ -7,9 +7,6 @@
 	<img src="ColorPicker.colored.svg" alt="ColorPicker colored icon" title="ColorPicker colored icon">
 </div>
 
-
 ## Description
-
-
 
 ### Templates

@@ -7,9 +7,6 @@
 	<img src="Open Server.colored.svg" alt="Open Server colored icon" title="Open Server colored icon">
 </div>
 
-
 ## Description
-
-
 
 ### Templates

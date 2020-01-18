@@ -7,9 +7,6 @@
 	<img src="Sublime Text.colored.svg" alt="Sublime Text colored icon" title="Sublime Text colored icon">
 </div>
 
-
 ## Description
-
-
 
 ### Templates
