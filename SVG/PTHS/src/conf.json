@@ -13,5 +13,10 @@
         "Image 1024x1024": [null, "1024"],
         "Image 2048x2048": [null, "2048"],
         "Image 4096x4096": [null, "4096"]
+    },
+    "github_pages": {
+        "status" : true,
+        "name": "PTHS icon",
+        "colored_name": "PTHS colored icon"
     }
 }

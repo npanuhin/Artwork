@@ -16,33 +16,107 @@ def make_path(*paths: List[str]) -> str:
     return os.path.normpath(os.path.join(*paths))
 
 
-def githubPages():
+def githubPages() -> None:
     '''Updates Github Pages'''
     print("Updating Github Pages...")
     rp = root_path
 
-    # ---Images---
-    with open(make_path(rp, ".github/html/image.html"), 'r', encoding='utf-8') as file:
-        html_template = file.read().strip()
+    # ---SVG---
+    with open(make_path(rp, ".github/templates/SVG.md"), 'r', encoding='utf-8') as file:
+        svg_md = file.read().strip()
+
+    images = []
 
     for image in os.listdir(make_path(rp, "SVG")):
         if not os.path.exists(make_path(rp, "SVG", image, "src/conf.json")):
             continue
+        with open(make_path(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
+            conf_data = loads(conf_file.read(), encoding="utf-8")
+        if "github_pages" not in conf_data:
+            continue
+        if not isinstance(conf_data["github_pages"], dict) or "status" not in conf_data["github_pages"] or not isinstance(conf_data["github_pages"]["status"], bool):
+            print("Warning! Can not handle due to invalid parameters: \"" + image + "\"")
+            continue
+        if not conf_data["github_pages"]["status"]:
+            continue
+        images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=image.replace(' ', '%20')))
 
-        # with open(make_path(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
-        #     conf_data = loads(conf_file.read(), encoding="utf-8")
+    svg_md += "\n\n" + "\n".join(images)
 
-        html_path = make_path(rp, "SVG", image, "index.html")
-        cur_html = html_template
-        # --Replace:
+    # Save
+    with open(make_path(rp, "SVG/README.md"), 'w', encoding='utf-8') as file:
+        file.write(svg_md.strip())
 
-        # Some work here
+    print("Created README.md with list of SVG images")
+
+    # ---Images---
+    with open(make_path(rp, ".github/templates/image.md"), 'r', encoding='utf-8') as file:
+        image_md_template = file.read().strip()
+    with open(make_path(rp, ".github/templates/not_colored_image.md"), 'r', encoding="utf-8") as file:
+        image_not_colored_template = file.read().strip()
+    with open(make_path(rp, ".github/templates/colored_image.md"), 'r', encoding="utf-8") as file:
+        image_colored_template = file.read().strip()
+
+    for image in os.listdir(make_path(rp, "SVG")):
+        # Many checks
+        if not os.path.exists(make_path(rp, "SVG", image, "src/conf.json")):
+            continue
+        with open(make_path(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
+            conf_data = loads(conf_file.read(), encoding="utf-8")
+        if "github_pages" not in conf_data:
+            continue
+        if not isinstance(conf_data["github_pages"], dict):
+            print("Warning! Can not handle due to invalid parameters: \"" + image + "\"")
+            continue
+        conf_data = conf_data['github_pages']
+        if "status" not in conf_data:
+            print("Warning! Can not handle due to invalid parameters: \"" + image + "\"")
+            continue
+        if not conf_data['status']:
+            continue
+
+        if "name" not in conf_data or not isinstance(conf_data["name"], str):
+            print("Warning! Can not handle due to invalid parameters: \"" + image + "\"")
+            continue
+
+        has_not_colored_version = (image + ".svg" in os.listdir(make_path(rp, "SVG", image)))
+        has_colored_version = (image + ".colored.svg" in os.listdir(make_path(rp, "SVG", image)))
+
+        if has_not_colored_version and "name" not in conf_data or not isinstance(conf_data["name"], str):
+            print("Warning! Can not handle due to invalid parameters: \"" + image + "\"")
+            continue
+        if has_colored_version and "colored_name" not in conf_data or not isinstance(conf_data["colored_name"], str):
+            print("Warning! Can not handle due to invalid parameters: \"" + image + "\"")
+            continue
+
+        if not os.path.exists(make_path(rp, "SVG", image, "src/template.md")) or not os.path.exists(make_path(rp, "SVG", image, "src/description.md")):
+            print("Warning! Can not handle \"" + image + "\". No such file or directory.")
+            continue
+
+        with open(make_path(rp, "SVG", image, "src/template.md"), 'r', encoding="utf-8") as file:
+            image_template = file.read()
+        with open(make_path(rp, "SVG", image, "src/description.md"), 'r', encoding="utf-8") as file:
+            image_description = file.read()
+
+        image_md = image_md_template
+
+        for _ in range(2):
+            image_md = image_md.format(
+                image_name=conf_data["name"] if has_not_colored_version else "",
+                image_colored_name=conf_data["colored_name"] if has_colored_version else "",
+                image_path=image + ".svg",
+                image_colored_path=image + ".colored.svg",
+                description_text=image_description,
+                template_text=image_template,
+                not_colored_image=image_not_colored_template if has_not_colored_version else "",
+                colored_image=image_colored_template if has_colored_version else ""
+            )
 
         # Save
-        with open(html_path, 'w', encoding='utf-8') as file:
-            file.write(cur_html.strip())
+        with open(make_path(rp, "SVG", image, "README.md"), 'w', encoding='utf-8') as file:
+            file.write(image_md.strip())
 
-        print("Created index.html for {name}".format(name=image))
+        print("Created README.md for {name}".format(name=image))
 
 
 def renderAll() -> None:
@@ -155,7 +229,7 @@ def main() -> None:
     print("Starting build...")
 
     renderAll()
-    # githubPages()
+    githubPages()
 
     print("Build complete.")
 
