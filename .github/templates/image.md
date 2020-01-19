@@ -4,7 +4,5 @@
 
 {colored_image}{not_colored_image}
 
-## Description
 {description_text}
-### Templates
 {template_text}

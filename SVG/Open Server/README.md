@@ -9,4 +9,8 @@
 
 ## Description
 
-### Templates
+This is the **[Open Server Panel](https://ospanel.io "Visit ospanel.io")** icon.
+
+### Template
+
+The template .ico file was taken from .exe file (Open Server x64.exe).

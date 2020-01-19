@@ -72,14 +72,21 @@ def githubPages() -> None:
         has_not_colored_version = (image + ".svg" in os.listdir(make_path(rp, "SVG", image)))
         has_colored_version = (image + ".colored.svg" in os.listdir(make_path(rp, "SVG", image)))
 
-        with open(make_path(rp, "SVG", image, "src/template.md"), 'r', encoding="utf-8") as file:
-            image_template = file.read().strip()
-            if image_template:
-                image_template = "\n" + image_template + "\n"
-        with open(make_path(rp, "SVG", image, "src/description.md"), 'r', encoding="utf-8") as file:
-            image_description = file.read().strip()
-            if image_description:
-                image_description = "\n" + image_description + "\n"
+        if os.path.exists(make_path(rp, "SVG", image, "src/template.md")):
+            with open(make_path(rp, "SVG", image, "src/template.md"), 'r', encoding="utf-8") as file:
+                image_template = file.read().strip()
+                if image_template:
+                    image_template = image_template + "\n"
+        else:
+            image_template = ""
+
+        if os.path.exists(make_path(rp, "SVG", image, "src/description.md")):
+            with open(make_path(rp, "SVG", image, "src/description.md"), 'r', encoding="utf-8") as file:
+                image_description = file.read().strip()
+                if image_description:
+                    image_description = image_description + "\n"
+        else:
+            image_description = ""
 
         image_md = image_md_template
         image_colored_template_loc = image_colored_template
