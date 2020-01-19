@@ -1,0 +1,22 @@
+{
+    "render_sizes": {
+        "Icon 16x16": [null, "16"],
+        "Icon 24x24": [null, "24"],
+        "Icon 32x32": [null, "32"],
+        "Icon 40x40": [null, "40"],
+        "Icon 48x48": [null, "48"],
+        "Icon 64x64": [null, "64"],
+        "Icon 96x96": [null, "96"],
+        "Icon 128x128": [null, "128"],
+        "Icon 256x256": [null, "256"],
+        "Image 512x512": [null, "512"],
+        "Image 1024x1024": [null, "1024"],
+        "Image 2048x2048": [null, "2048"],
+        "Image 4096x4096": [null, "4096"]
+    },
+    "github_pages": {
+        "status" : true,
+        "name": "Lexilize icon",
+        "colored_name": "Lexilize colored icon"
+    }
+}
