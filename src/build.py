@@ -16,6 +16,14 @@ def make_path(*paths: List[str]) -> str:
     return os.path.normpath(os.path.join(*paths))
 
 
+def url(string: str) -> str:
+    return string.replace(" ", "%20")
+
+
+def doubleUrl(string: str) -> str:
+    return string.replace(" ", "%2520")
+
+
 def checkGithubPages(image: str) -> bool:
     '''Checks whether to create a page for an image'''
     if not os.path.exists(make_path(root_path, "SVG", image, "src/conf.json")):
@@ -39,14 +47,14 @@ def githubPages() -> None:
     rp = root_path
 
     # ---SVG---
-    with open(make_path(rp, ".github/templates/SVG.md"), 'r', encoding='utf-8') as file:
+    with open(make_path(rp, "src/templates/SVG.md"), 'r', encoding='utf-8') as file:
         svg_md = file.read().strip()
 
     images = []
 
     for image in os.listdir(make_path(rp, "SVG")):
         if checkGithubPages(image):
-            images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=image.replace(' ', '%20')))
+            images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=url(image)))
 
     # Save
     with open(make_path(rp, "SVG/README.md"), 'w', encoding='utf-8') as file:
@@ -55,11 +63,11 @@ def githubPages() -> None:
     print("Created README.md with list of SVG images")
 
     # ---Images---
-    with open(make_path(rp, ".github/templates/image.md"), 'r', encoding='utf-8') as file:
+    with open(make_path(rp, "src/templates/image.md"), 'r', encoding='utf-8') as file:
         image_md_template = file.read()
-    with open(make_path(rp, ".github/templates/not_colored_image.md"), 'r', encoding="utf-8") as file:
+    with open(make_path(rp, "src/templates/not_colored_image.md"), 'r', encoding="utf-8") as file:
         image_not_colored_template = file.read().strip()
-    with open(make_path(rp, ".github/templates/colored_image.md"), 'r', encoding="utf-8") as file:
+    with open(make_path(rp, "src/templates/colored_image.md"), 'r', encoding="utf-8") as file:
         image_colored_template = file.read().strip()
 
     for image in os.listdir(make_path(rp, "SVG")):
@@ -96,10 +104,30 @@ def githubPages() -> None:
 
         for _ in range(2):
             image_md = image_md.format(
+                image=image,
+                image_url=url(image),
+                image_url2=doubleUrl(image),
+
+                image_colord=image + ".colored",
+                image_colored_url=url(image + ".colored"),
+                image_colored_url2=doubleUrl(image + ".colored"),
+
                 image_name=conf_data["name"] if has_not_colored_version else "",
+                image_name_url=url(conf_data["name"] if has_not_colored_version else ""),
+                image_urimage_name_url2l2=doubleUrl(conf_data["name"] if has_not_colored_version else ""),
+
                 image_colored_name=conf_data["colored_name"] if has_colored_version else "",
+                image_colored_name_url=url(conf_data["colored_name"] if has_colored_version else ""),
+                image_colored_name_url2=doubleUrl(conf_data["colored_name"] if has_colored_version else ""),
+
                 image_path=image + ".svg",
+                image_path_url=url(image + ".svg"),
+                image_path_url2=doubleUrl(image + ".svg"),
+
                 image_colored_path=image + ".colored.svg",
+                image_colored_path_url=url(image + ".colored.svg"),
+                image_colored_path_url2=doubleUrl(image + ".colored.svg"),
+
                 description_text=image_description,
                 template_text=image_template,
                 not_colored_image=image_not_colored_template if has_not_colored_version else "",

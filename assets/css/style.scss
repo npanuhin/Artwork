@@ -63,13 +63,10 @@
 }
 
 #main-content .spoiler .spoiler_content {
-	transition: 0.5s all ease-out;
-	transform-origin: top center;
 	max-height: 0;
 	overflow: hidden;
 }
 
 #main-content .spoiler.shown .spoiler_content {
-	transition: 1s all ease-in;
-	max-height: 99999px;
+	max-height: none;
 }

@@ -1,8 +1,8 @@
 <h1 class="gp_hidden"><p align="center">Vector images</p></h1>
 
 <div class="badges" align="center">
-  <a class="svg_version" href="./.github/SVG_sample.md" target="_blank"><img class="svg_version" alt="SVG verion: 1.1" src="https://img.shields.io/badge/SVG%20version-1.1-orange?style=flat"></a>
-  <a class="license" href="http://n-panuhin.info/license.html" target="_blank"><img alt="License: MIT" src="https://img.shields.io/github/license/Nikita-Panuhin/vector?style=flat"></a>
+	<a class="svg_version" href="./.src/SVG_sample.md" target="_blank"><img alt="SVG verion: 1.1" src="https://img.shields.io/badge/SVG%20version-1.1-orange?style=flat"></a>
+	<a class="license" href="http://n-panuhin.info/license.html" target="_blank"><img alt="License: MIT" src="https://img.shields.io/github/license/Nikita-Panuhin/vector?style=flat"></a>
 </div>
 
 ## About
@@ -13,13 +13,13 @@ You can use any of these images in your projects, works etc within the confines 
 
 **[Start exploring!](./SVG "See SVG images")**
 
-**If you think that you have found a mistake or have sufficiently improved (including minification) something in this repository, you are very welcome to contact me [here](http://n-panuhin.info "Nikita Panuhin") or directly by [email](mailto:n.panuhin@mail.ru "Mailto: Nikita Panuhin").**
+**If you think that you have found a mistake or have sufficiently improved (including minification) something in this repository, you are very welcome to contact me <a href="http://n-panuhin.info" title="Nikita Panuhin" target="_blank">here</a> or directly by [email](mailto:n.panuhin@mail.ru "Mailto: Nikita Panuhin").**
 
 ## Technical information
 
 -   Adobe Illustrator files are built with *Illustrator CC* and are compatible with *Illustrator 17* and later versions.
--   SVG files are exported from Adobe Illustrator and then partly minified and beautified to fit some standards, as I see it. [See sample](./.github/SVG_sample.md "See SVG file sample")
--   PNG files are [rendered](./.github/render.py "See render.py file") using the *[convert-svg-to-png](https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png "Node.js: convert-svg-to-png by neocotic")* Node.js package by [neocotic](https://github.com/neocotic "Github user: neocotic"). Render sizes are specified for each image in "SVG/{image\_name}/src/conf.json".
+-   SVG files are exported from Adobe Illustrator and then partly minified and beautified to fit some standards, as I see it. <a href="https://github.com/Nikita-Panyuhin/vector/blob/master/src/SVG_sample.md" title="See SVG file sample" target="_blank">See sample</a>
+-   PNG files are rendered using the *<a href="https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png" title="Node.js: convert-svg-to-png by neocotic" target="_blank">convert-svg-to-png</a>* Node.js package by <a href="https://github.com/neocotic" title="Github user: neocotic" target="_blank">neocotic</a>. Render sizes are specified for each image in "SVG/{image\_name}/src/conf.json".
 
 ## License
 <!-- The project is generally licensed under the [MIT License](http://n-panuhin.info/license.html "MIT License").
