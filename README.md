@@ -20,7 +20,7 @@ You can use any of these images in your projects, works etc within the confines 
 -   Adobe Illustrator files are built with *Illustrator CC* and are compatible with *Illustrator 17* and later versions.
 -   SVG files are exported from Adobe Illustrator and then partly minified and beautified to fit some standards, as I see it. <a href="https://github.com/Nikita-Panyuhin/vector/blob/master/src/SVG_sample.md" title="See SVG file sample" target="_blank">See sample</a>
 -   PNG files are rendered using the *<a href="https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png" title="Node.js: convert-svg-to-png by neocotic" target="_blank">convert-svg-to-png</a>* Node.js package by <a href="https://github.com/neocotic" title="Github user: neocotic" target="_blank">neocotic</a>. Render sizes are specified for each image in "SVG/{image\_name}/src/conf.json".
--   The size of any SVG image is calculated without considering the size of the XML header (-40 bytes). The SVG version is removed for the compressed files (-14 bytes).
+-   The size of any SVG image is calculated without considering the size of the XML header (-40 bytes). SVG version is removed for compressed files (-14 bytes).
 
 ## License
 
