@@ -1,8 +1,8 @@
 <h1 class="gp_hidden"><p align="center">Vector images</p></h1>
 
 <div class="badges gp_hidden" align="center">
-	<a href="./SVG" title="Average SVG size: 2.46 kB"><img alt="Average SVG size: 2.46 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Average%20SVG%20size&message=2.46%20kB&color=0aa"></a>
-	<a href="./SVG" title="Average compressed SVG size: 2.37 kB"><img alt="Compressed: 2.37 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=2.37%20kB&color=bb0"></a>
+	<a href="./SVG" title="Average SVG size: {average_svg_size}"><img alt="Average SVG size: {average_svg_size}" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Average%20SVG%20size&message={average_svg_size_url}&color=0aa"></a>
+	<a href="./SVG" title="Average compressed SVG size: {average_compressed_svg_size}"><img alt="Compressed: {average_compressed_svg_size}" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message={average_compressed_svg_size_url}&color=bb0"></a>
 	<a href="./src/SVG_sample.md" target="_blank" title="SVG version: 1.1"><img alt="SVG version: 1.1" src="https://img.shields.io/static/v1??cacheSeconds=86400&style=flat&label=SVG&message=v1.1&color=orange"></a>
 	<a href="http://n-panuhin.info/license.html" target="_blank" title="license: MIT"><img alt="license: MIT" src="https://img.shields.io/static/v1?cacheSeconds=604800&style=flat&label=license&message=MIT&color=informational"></a>
 </div>
@@ -19,7 +19,7 @@ You can use any of these images in your projects, works etc within the confines 
 
 -   Adobe Illustrator files are built with *Illustrator CC* and are compatible with *Illustrator 17* and later versions.
 -   SVG files are exported from Adobe Illustrator and then partly minified and beautified to fit some standards, as I see it. <a href="https://github.com/Nikita-Panyuhin/vector/blob/master/src/SVG_sample.md" title="See SVG file sample" target="_blank">See sample</a>
--   PNG files are rendered using the *<a href="https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png" title="Node.js: convert-svg-to-png by neocotic" target="_blank">convert-svg-to-png</a>* Node.js package by <a href="https://github.com/neocotic" title="Github user: neocotic" target="_blank">neocotic</a>. Render sizes are specified for each image in "SVG/{image\_name}/src/conf.json".
+-   PNG files are rendered using the *<a href="https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png" title="Node.js: convert-svg-to-png by neocotic" target="_blank">convert-svg-to-png</a>* Node.js package by <a href="https://github.com/neocotic" title="Github user: neocotic" target="_blank">neocotic</a>. Render sizes are specified for each image in "SVG/{{image\_name}}/src/conf.json".
 -   The size of any SVG image is calculated without considering the size of the XML header (-40 bytes). The SVG version is removed for the compressed files (-14 bytes).
 
 ## License
