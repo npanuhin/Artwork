@@ -225,9 +225,17 @@ def githubPages() -> None:
                 image_path_url=url(image + ".svg"),
                 image_path_url2=doubleUrl(image + ".svg"),
 
+                image_compressed_path=image + ".min.svg",
+                image_compressed_path_url=url(image + ".min.svg"),
+                image_compressed_path_url2=doubleUrl(image + ".min.svg"),
+
                 image_colored_path=image + ".colored.svg",
                 image_colored_path_url=url(image + ".colored.svg"),
                 image_colored_path_url2=doubleUrl(image + ".colored.svg"),
+
+                image_colored_compressed_path=image + ".colored.min.svg",
+                image_colored_compressed_path_url=url(image + ".colored.min.svg"),
+                image_colored_compressed_path_url2=doubleUrl(image + ".colored.min.svg"),
 
                 not_colored_template=image_not_colored_template if has_not_colored_version else "",
                 colored_template=image_colored_template_loc if has_colored_version else "",

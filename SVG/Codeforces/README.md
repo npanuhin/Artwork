@@ -10,7 +10,7 @@
 	<a href="Codeforces.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 640 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=640%20B&color=0aa">
 	</a>
-	<a href="Codeforces.colored.svg" target="_blank" title="File size">
+	<a href="./src/Codeforces.colored.min.svg" target="_blank" title="File size">
 		<img alt="Compressed file size: 592 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=592%20B&color=bb0">
 	</a>
 </div>
@@ -30,7 +30,7 @@
 			<a href="Codeforces.svg" target="_blank" title="File size">
 				<img alt="File size: 498 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=498%20B&color=0aa">
 			</a>
-			<a href="Codeforces.svg" target="_blank" title="File size">
+			<a href="./src/Codeforces.min.svg" target="_blank" title="File size">
 				<img alt="Compressed file size: 471 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=471%20B&color=bb0">
 			</a>
 		</div>

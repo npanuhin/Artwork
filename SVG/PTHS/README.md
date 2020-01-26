@@ -13,7 +13,7 @@
 			<a href="PTHS.svg" target="_blank" title="File size">
 				<img alt="File size: 4.57 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=4.57%20kB&color=0aa">
 			</a>
-			<a href="PTHS.svg" target="_blank" title="File size">
+			<a href="./src/PTHS.min.svg" target="_blank" title="File size">
 				<img alt="Compressed file size: 4.54 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=4.54%20kB&color=bb0">
 			</a>
 		</div>

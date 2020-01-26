@@ -10,7 +10,7 @@
 	<a href="ColorPicker.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 3.31 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=3.31%20kB&color=0aa">
 	</a>
-	<a href="ColorPicker.colored.svg" target="_blank" title="File size">
+	<a href="./src/ColorPicker.colored.min.svg" target="_blank" title="File size">
 		<img alt="Compressed file size: 3.19 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=3.19%20kB&color=bb0">
 	</a>
 </div>

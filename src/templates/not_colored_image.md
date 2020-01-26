@@ -9,7 +9,7 @@
 			<a href="{image_path}" target="_blank" title="File size">
 				<img alt="File size: {image_size}" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message={image_size_url}&color=0aa">
 			</a>
-			<a href="{image_path}" target="_blank" title="File size">
+			<a href="./src/{image_compressed_path}" target="_blank" title="File size">
 				<img alt="Compressed file size: {image_compressed_size}" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message={image_compressed_size_url}&color=bb0">
 			</a>
 		</div>

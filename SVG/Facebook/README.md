@@ -10,7 +10,7 @@
 	<a href="Facebook.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 602 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=602%20B&color=0aa">
 	</a>
-	<a href="Facebook.colored.svg" target="_blank" title="File size">
+	<a href="./src/Facebook.colored.min.svg" target="_blank" title="File size">
 		<img alt="Compressed file size: 559 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=559%20B&color=bb0">
 	</a>
 </div>
@@ -30,7 +30,7 @@
 			<a href="Facebook.svg" target="_blank" title="File size">
 				<img alt="File size: 484 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=484%20B&color=0aa">
 			</a>
-			<a href="Facebook.svg" target="_blank" title="File size">
+			<a href="./src/Facebook.min.svg" target="_blank" title="File size">
 				<img alt="Compressed file size: 452 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=452%20B&color=bb0">
 			</a>
 		</div>

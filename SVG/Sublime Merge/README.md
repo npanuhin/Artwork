@@ -10,7 +10,7 @@
 	<a href="Sublime Merge.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 1.35 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=1.35%20kB&color=0aa">
 	</a>
-	<a href="Sublime Merge.colored.svg" target="_blank" title="File size">
+	<a href="./src/Sublime Merge.colored.min.svg" target="_blank" title="File size">
 		<img alt="Compressed file size: 1.28 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=1.28%20kB&color=bb0">
 	</a>
 </div>

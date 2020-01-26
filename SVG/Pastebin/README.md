@@ -10,7 +10,7 @@
 	<a href="Pastebin.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 9.21 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=9.21%20kB&color=0aa">
 	</a>
-	<a href="Pastebin.colored.svg" target="_blank" title="File size">
+	<a href="./src/Pastebin.colored.min.svg" target="_blank" title="File size">
 		<img alt="Compressed file size: 9.02 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=9.02%20kB&color=bb0">
 	</a>
 </div>
