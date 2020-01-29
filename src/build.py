@@ -257,7 +257,9 @@ def githubPages() -> None:
 
                 image_colored_compressed_size=image_colored_compressed_size,
                 image_colored_compressed_size_url=url(image_colored_compressed_size),
-                image_colored_compressed_size_url2=doubleUrl(image_colored_compressed_size)
+                image_colored_compressed_size_url2=doubleUrl(image_colored_compressed_size),
+
+                not_colored_image_shown=" shown" if has_not_colored_version and not has_colored_version else ""
             )
 
         # Save
