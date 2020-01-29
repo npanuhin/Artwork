@@ -1,8 +1,8 @@
 <h1 class="gp_hidden"><p align="center">Vector images</p></h1>
 
 <div class="badges gp_hidden" align="center">
-	<a href="./SVG" title="Average SVG size: 2.46 kB"><img alt="Average SVG size: 2.46 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Average%20SVG%20size&message=2.46%20kB&color=0aa"></a>
-	<a href="./SVG" title="Average compressed SVG size: 2.37 kB"><img alt="Compressed: 2.37 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=2.37%20kB&color=bb0"></a>
+	<a href="./SVG" title="Average SVG size: 2.5 kB"><img alt="Average SVG size: 2.5 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Average%20SVG%20size&message=2.5%20kB&color=0aa"></a>
+	<a href="./SVG" title="Average compressed SVG size: 2.41 kB"><img alt="Compressed: 2.41 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=2.41%20kB&color=bb0"></a>
 	<a href="./src/SVG_sample.md" target="_blank" title="SVG version: 1.1"><img alt="SVG version: 1.1" src="https://img.shields.io/static/v1??cacheSeconds=86400&style=flat&label=SVG&message=v1.1&color=orange"></a>
 	<a href="http://n-panuhin.info/license.html" target="_blank" title="license: MIT"><img alt="license: MIT" src="https://img.shields.io/static/v1?cacheSeconds=604800&style=flat&label=license&message=MIT&color=informational"></a>
 </div>

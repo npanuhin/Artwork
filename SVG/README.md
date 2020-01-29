@@ -4,6 +4,7 @@
 
 -   [Codeforces](./Codeforces "See Codeforces SGV image")
 -   [ColorPicker](./ColorPicker "See ColorPicker SGV image")
+-   [Desmos](./Desmos "See Desmos SGV image")
 -   [Facebook](./Facebook "See Facebook SGV image")
 -   [Lexilize](./Lexilize "See Lexilize SGV image")
 -   [LKSH](./LKSH "See LKSH SGV image")
