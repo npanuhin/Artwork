@@ -166,17 +166,23 @@ def githubPages() -> None:
         image_colored_size, image_colored_compressed_size = "", ""
 
         if has_not_colored_version:
+            with open(makePath(rp, "SVG", image, image + ".svg"), 'r', encoding="utf-8") as svg_file:
+                svg_file_data = svg_file.read().strip()
+
+            with open(makePath(rp, "SVG", image, image + ".svg"), 'w', encoding="utf-8") as svg_file, \
+                    open(makePath(rp, "SVG", image, "src", image + ".min.svg"), 'w', encoding="utf-8") as compressed_svg_file:
+                svg_file.write(svg_file_data + "\n")
+
+                compressed_svg_file.write(minify(
+                    svg_file_data.replace(XML_HEADER, "").replace(VERSION_HEADER, "")
+                ).strip())
+
             image_size = os.path.getsize(
                 makePath(rp, "SVG", image, image + ".svg")
             ) - XML_HEADER_SIZE
 
             total_svg_size += image_size
             svg_files_count += 1
-            with open(makePath(rp, "SVG", image, image + ".svg"), 'r', encoding="utf-8") as svg_file, \
-                    open(makePath(rp, "SVG", image, "src", image + ".min.svg"), 'w', encoding="utf-8") as compressed_svg_file:
-                compressed_svg_file.write(minify(
-                    svg_file.read().strip().replace(XML_HEADER, "").replace(VERSION_HEADER, "")
-                ).strip())
             image_size = prettifySize(image_size)
 
             compressed_svg_size = os.path.getsize(makePath(rp, "SVG", image, "src", image + ".min.svg"))
@@ -185,17 +191,23 @@ def githubPages() -> None:
             image_compressed_size = prettifySize(compressed_svg_size)
 
         if has_colored_version:
+            with open(makePath(rp, "SVG", image, image + ".colored.svg"), 'r', encoding="utf-8") as svg_file:
+                svg_file_data = svg_file.read().strip()
+
+            with open(makePath(rp, "SVG", image, image + ".colored.svg"), 'w', encoding="utf-8") as svg_file, \
+                    open(makePath(rp, "SVG", image, "src", image + ".colored.min.svg"), 'w', encoding="utf-8") as compressed_svg_file:
+                svg_file.write(svg_file_data + "\n")
+
+                compressed_svg_file.write(minify(
+                    svg_file_data.replace(XML_HEADER, "").replace(VERSION_HEADER, "")
+                ).strip())
+
             image_colored_size = os.path.getsize(
                 makePath(rp, "SVG", image, image + ".colored.svg")
             ) - XML_HEADER_SIZE
 
             total_svg_size += image_colored_size
             svg_files_count += 1
-            with open(makePath(rp, "SVG", image, image + ".colored.svg"), 'r', encoding="utf-8") as svg_file, \
-                    open(makePath(rp, "SVG", image, "src", image + ".colored.min.svg"), 'w', encoding="utf-8") as compressed_svg_file:
-                compressed_svg_file.write(minify(
-                    svg_file.read().strip().replace(XML_HEADER, "").replace(VERSION_HEADER, "")
-                ).strip())
             image_colored_size = prettifySize(image_colored_size)
 
             compressed_svg_size = os.path.getsize(makePath(rp, "SVG", image, "src", image + ".colored.min.svg"))
