@@ -8,10 +8,10 @@
 		<img alt="" src="https://img.shields.io/w3c-validation/xml?preset=SVG%201.1%2C%20URL%2C%20XHTML%2C%20MathML%203.0&targetUrl=http%3A%2F%2Fn-panuhin.info%2Fredirect.php%3Fu%3Dhttp%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FDesmos%2FDesmos.colored.svg">
 	</a>
 	<a href="Desmos.colored.svg" target="_blank" title="File size">
-		<img alt="File size: 3.04 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=3.04%20kB&color=0aa">
+		<img alt="File size: 3.1 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=3.1%20kB&color=0aa">
 	</a>
 	<a href="./src/Desmos.colored.min.svg" target="_blank" title="File size">
-		<img alt="Compressed file size: 2.95 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=2.95%20kB&color=bb0">
+		<img alt="Compressed file size: 3.01 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=3.01%20kB&color=bb0">
 	</a>
 </div>
 <div>
