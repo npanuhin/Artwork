@@ -225,9 +225,9 @@ def githubPages() -> None:
                 image_colored_url=url(image + ".colored"),
                 image_colored_url2=doubleUrl(image + ".colored"),
 
-                image_name=conf_data["name"] if has_not_colored_version else "",
-                image_name_url=url(conf_data["name"] if has_not_colored_version else ""),
-                image_urimage_name_url2l2=doubleUrl(conf_data["name"] if has_not_colored_version else ""),
+                image_name=conf_data["name"],
+                image_name_url=url(conf_data["name"]),
+                image_urimage_name_url2l2=doubleUrl(conf_data["name"]),
 
                 image_colored_name=conf_data["colored_name"] if has_colored_version else "",
                 image_colored_name_url=url(conf_data["colored_name"] if has_colored_version else ""),

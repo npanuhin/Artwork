@@ -1,6 +1,6 @@
 [&lt; back to home page](../../../../ "Home page")
 
-<h1><p align="center">Vector images: </p></h1>
+<h1><p align="center">Vector images: Open Server icon</p></h1>
 
 <h2><p align="center"><a href="Open Server.colored.svg" title="View & Download Open Server colored icon">Colored</a></p></h2>
 <div class="badges" align="center">

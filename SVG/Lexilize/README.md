@@ -1,6 +1,6 @@
 [&lt; back to home page](../../../../ "Home page")
 
-<h1><p align="center">Vector images: </p></h1>
+<h1><p align="center">Vector images: Lexilize icon</p></h1>
 
 <h2><p align="center"><a href="Lexilize.colored.svg" title="View & Download Lexilize colored icon">Colored</a></p></h2>
 <div class="badges" align="center">

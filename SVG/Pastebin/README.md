@@ -1,6 +1,6 @@
 [&lt; back to home page](../../../../ "Home page")
 
-<h1><p align="center">Vector images: </p></h1>
+<h1><p align="center">Vector images: Pastebin icon</p></h1>
 
 <h2><p align="center"><a href="Pastebin.colored.svg" title="View & Download Pastebin colored icon">Colored</a></p></h2>
 <div class="badges" align="center">

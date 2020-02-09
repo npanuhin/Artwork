@@ -28,12 +28,12 @@
 </svg>
 ```
 
-| Parameter                                                            | Explanation                                                                             |
-|----------------------------------------------------------------------| --------------------------------------------------------------------------------------- |
-| version="1.1"                                                        | SVG version                                                                             |
-| xmlns="http<span>://w</span>ww<span>.w3.</span>org/2000/svg"         | [XML namespace](https://en.wikipedia.org/wiki/XML_namespace "Wikipedia: XML namespace") |
-| xmlns:xlink="http<span>://w</span>ww<span>.w3</span>.org/1999/xlink" | [XML namespace](https://en.wikipedia.org/wiki/XML_namespace "Wikipedia: XML namespace") |                                                                                      |
-| viewBox="0 0 X Y"                                                    | [Position and dimension of an SVG viewport](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox "MDN: viewBox (SVG)")|
+| Parameter                                                            | Explanation                                                                                                                          |
+|----------------------------------------------------------------------| ------------------------------------------------------------------------------------------------------------------------------------ |
+| version="1.1"                                                        | SVG version                                                                                                                          |
+| xmlns="http<span>://w</span>ww<span>.w3.</span>org/2000/svg"         | [XML namespace](https://en.wikipedia.org/wiki/XML_namespace "Wikipedia: XML namespace")                                              |
+| xmlns:xlink="http<span>://w</span>ww<span>.w3</span>.org/1999/xlink" | [XML namespace](https://en.wikipedia.org/wiki/XML_namespace "Wikipedia: XML namespace")                                              |
+| viewBox="0 0 X Y"                                                    | [Position and dimension of an SVG viewport](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox "MDN: viewBox (SVG)") |
 
 ---
 

@@ -1,6 +1,6 @@
 [&lt; back to home page](../../../../ "Home page")
 
-<h1><p align="center">Vector images: </p></h1>
+<h1><p align="center">Vector images: Sublime Text icon</p></h1>
 
 <h2><p align="center"><a href="Sublime Text.colored.svg" title="View & Download Sublime Text colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
