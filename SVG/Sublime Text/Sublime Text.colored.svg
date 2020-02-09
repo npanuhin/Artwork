@@ -2,13 +2,13 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
 	<defs>
 		<linearGradient id="lg0" gradientUnits="userSpaceOnUse" x1="256" y1="32" x2="256" y2="480">
-			<stop offset="0" style="stop-color:#4D4D4D"/>
-			<stop offset="1" style="stop-color:#404040"/>
+			<stop offset="0" stop-color="#4D4D4D"/>
+			<stop offset="1" stop-color="#404040"/>
 		</linearGradient>
 		<linearGradient id="lg1" gradientUnits="userSpaceOnUse" x1="267.7493" y1="299.8306" x2="220.1852" y2="449.7715">
-			<stop offset="0.0361" style="stop-color:#E37F00"/>
-			<stop offset="0.2011" style="stop-color:#F79000"/>
-			<stop offset="0.3643" style="stop-color:#FF9700"/>
+			<stop offset="0.0361" stop-color="#E37F00"/>
+			<stop offset="0.2011" stop-color="#F79000"/>
+			<stop offset="0.3643" stop-color="#FF9700"/>
 		</linearGradient>
 	</defs>
 	<style type="text/css">

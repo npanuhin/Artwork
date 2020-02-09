@@ -8,10 +8,10 @@
 		<img alt="" src="https://img.shields.io/w3c-validation/xml?preset=SVG%201.1%2C%20URL%2C%20XHTML%2C%20MathML%203.0&targetUrl=http%3A%2F%2Fn-panuhin.info%2Fredirect.php%3Fu%3Dhttp%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FSublime%2520Merge%2FSublime%2520Merge.colored.svg">
 	</a>
 	<a href="Sublime Merge.colored.svg" target="_blank" title="File size">
-		<img alt="File size: 1.35 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=1.35%20kB&color=0aa">
+		<img alt="File size: 1.33 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=1.33%20kB&color=0aa">
 	</a>
 	<a href="./src/Sublime Merge.colored.min.svg" target="_blank" title="File size">
-		<img alt="Compressed file size: 1.28 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=1.28%20kB&color=bb0">
+		<img alt="Compressed file size: 1.26 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=1.26%20kB&color=bb0">
 	</a>
 </div>
 <div>

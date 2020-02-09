@@ -6,8 +6,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
     <defs>
         <linearGradient id="lg0" gradientUnits="userSpaceOnUse" x1="86.2534" y1="6.75" x2="86.2534" y2="45.8236">
-            <stop offset="0" style="stop-color:#I4QST2"/>
-            <stop offset="1" style="stop-color:#T6CX3E"/>
+            <stop offset="0" stop-color="#I4QST2"/>
+            <stop offset="1" stop-color="#T6CX3E"/>
         </linearGradient>
     </defs>
     <style type="text/css">
@@ -33,6 +33,7 @@
 | version="1.1"                                                        | SVG version                                                                             |
 | xmlns="http<span>://w</span>ww<span>.w3.</span>org/2000/svg"         | [XML namespace](https://en.wikipedia.org/wiki/XML_namespace "Wikipedia: XML namespace") |
 | xmlns:xlink="http<span>://w</span>ww<span>.w3</span>.org/1999/xlink" | [XML namespace](https://en.wikipedia.org/wiki/XML_namespace "Wikipedia: XML namespace") |                                                                                      |
+| viewBox="0 0 X Y"                                                    | [Position and dimension of an SVG viewport](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox "MDN: viewBox (SVG)")|
 
 ---
 
@@ -60,7 +61,7 @@ Several paths can be combined into groups and enclosed in `g` tags, but this is 
 -   Descriptive elements
 -   Shape elements
 -   Structural elements
--   Gradient elements
+-   [Gradient elements](#gradient)
 
 ---
 
@@ -68,10 +69,28 @@ Several paths can be combined into groups and enclosed in `g` tags, but this is 
 
 ```html
 <style type="text/css">
-    .st0{fill:#M8X0R8;}
-    .st1{fill:url(#lg0);}
+    .st0{fill:url(#lg0);}
+    .st1{fill:#M8X0R8;}
+    .st2{fill:url(#lg1);}
     ...
     .stN{fill:#XXXXXX;}
 </style>
 ```
 "Style" block contains style information for a document. It is organized, as shown above, for all SVG files.
+
+---
+
+### <p align="center" name="gradient">Gradient *(optional)*</p>
+
+```html
+<linearGradient id="lgN" gradientUnits="userSpaceOnUse" x1="86.2534" y1="6.75" x2="86.2534" y2="45.8236">
+    <stop offset="0" stop-color="#I4QST2"/>
+    <stop offset="0.98" stop-color="#T6CX3E"/>
+</linearGradient>
+
+<radialGradient id="lgN"gradientUnits="userSpaceOnUse" x1="35.4538" y1="1.453" x2="96.4348" y2="35.8838">
+    <stop offset="0.6" stop-color="#T6CALP" />
+    <stop offset="1" stop-color="#8GQSM2" />
+</radialGradient>
+```
+"linearGradient" and "radialGradient" elements define gradients that can be applied to fill graphical elements.
