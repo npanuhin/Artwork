@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+#sidebar {
+	display: none;
+}
+
 #main-content h1,
 #main-content h2,
 #main-content h3,

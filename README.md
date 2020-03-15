@@ -8,7 +8,7 @@
 </div>
 
 ## About
-This is a repository of my vector paintings.
+This is a repository of my vector paintings (yes, the templates were taken from the Internet, but the vector images were drawn by myself).
 You can use any of these images in your projects, works etc within the confines of the license.
 
 **[Start exploring!](./SVG "See SVG images")**
@@ -22,10 +22,8 @@ You can use any of these images in your projects, works etc within the confines 
 -   PNG files are rendered using the *<a href="https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png" title="Node.js: convert-svg-to-png by neocotic" target="_blank">convert-svg-to-png</a>* Node.js package by <a href="https://github.com/neocotic" title="Github user: neocotic" target="_blank">neocotic</a>. Render sizes are specified for each image in "SVG/{image\_name}/src/conf.json".
 -   The size of any SVG image is calculated without considering the size of the XML header (-40 bytes). SVG version is removed for compressed files (-14 bytes).
 
-## License
+--------------------------------------
 
-The project is licensed under the [MIT License](http://n-panuhin.info/license.html "MIT License").
+Copyright &copy; 2020 Nikita Paniukhin
 
----
-
-Copyright &copy; 2020 Panyukhin Nikita
+License: [MIT](http://n-panuhin.info/license.html "Visit n-panuhin.info/license")

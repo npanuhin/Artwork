@@ -28,4 +28,4 @@ The project is licensed under the [MIT License](http://n-panuhin.info/license.ht
 
 ---
 
-Copyright &copy; 2020 Panyukhin Nikita
+Copyright &copy; 2020 Nikita Paniukhin
