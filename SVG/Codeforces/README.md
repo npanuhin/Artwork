@@ -4,9 +4,6 @@
 
 <h2><p align="center"><a href="Codeforces.colored.svg" title="View & Download Codeforces colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
-	<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=http%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FCodeforces%2FCodeforces.colored.svg" target="_blank" title="W3C validation">
-		<img alt="" src="https://img.shields.io/w3c-validation/xml?preset=SVG%201.1%2C%20URL%2C%20XHTML%2C%20MathML%203.0&targetUrl=http%3A%2F%2Fn-panuhin.info%2Fredirect.php%3Fu%3Dhttp%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FCodeforces%2FCodeforces.colored.svg">
-	</a>
 	<a href="Codeforces.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 640 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=640%20B&color=0aa">
 	</a>
@@ -24,9 +21,6 @@
 	<div class="spoiler_text" onclick="this.parentNode.classList.toggle('shown')"></div>
 	<div class="spoiler_content">
 		<div class="badges" align="center">
-			<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=http%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FCodeforces%2FCodeforces.svg" target="_blank">
-				<img alt="W3C Validation" src="https://img.shields.io/w3c-validation/xml?preset=SVG%201.1%2C%20URL%2C%20XHTML%2C%20MathML%203.0&targetUrl=http%3A%2F%2Fn-panuhin.info%2Fredirect.php%3Fu%3Dhttp%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FCodeforces%2FCodeforces.svg">
-			</a>
 			<a href="Codeforces.svg" target="_blank" title="File size">
 				<img alt="File size: 498 B" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=498%20B&color=0aa">
 			</a>
@@ -49,3 +43,13 @@ This is the oficial **[Codeforces](https://codeforces.com "Visit codeforces.com"
 ### Template
 
 The [template SVG image](https://github.com/yammadev/brand-icons/blob/master/svg/codeforces.svg "See template SVG file") was taken from *[brand-icons](https://github.com/yammadev/brand-icons "See 'brand-icons' by yammadev")*, owned by **[yammadev](https://github.com/yammadev "Github user: yammadev")**
+
+
+### Links
+
+-   [Beautified colored version](Codeforces.colored.svg "Download beautified colored SVG")
+-   [Compressed colored version](./src/Codeforces.colored.min.svg "Download compressed colored SVG")
+-   [Beautified black-and-white version](Codeforces.svg "Download beautified black-and-white SVG")
+-   [Compressed black-and-white version](./src/Codeforces.min.svg "Download compressed black-and-white SVG")
+-   [*Adobe Illustrator* source file](./src/Codeforces.ai "Download Adobe Illustrator (.ai) source file")
+-   [*Adobe Illustrator* source file with colors](./src/Codeforces.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

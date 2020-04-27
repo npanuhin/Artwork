@@ -68,12 +68,8 @@ def prettifySize(value: int) -> str:
     return str(round(value / 1024, 2)) + " TB"
 
 
-def url(string: str) -> str:
+def makeUrl(string: str) -> str:
     return string.replace(" ", "%20")
-
-
-def doubleUrl(string: str) -> str:
-    return string.replace(" ", "%2520")
 
 
 def checkGithubPages(image: str) -> bool:
@@ -110,7 +106,7 @@ def githubPages() -> None:
 
     for image in os.listdir(makePath(rp, "SVG")):
         if checkGithubPages(image):
-            images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=url(image)))
+            images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=makeUrl(image)))
 
     # Save
     with open(makePath(rp, "SVG/README.md"), 'w', encoding='utf-8') as file:
@@ -218,36 +214,28 @@ def githubPages() -> None:
         for _ in range(3):
             image_md = image_md.format(
                 image=image,
-                image_url=url(image),
-                image_url2=doubleUrl(image),
+                image_url=makeUrl(image),
 
                 image_colored=image + ".colored",
-                image_colored_url=url(image + ".colored"),
-                image_colored_url2=doubleUrl(image + ".colored"),
+                image_colored_url=makeUrl(image + ".colored"),
 
                 image_name=conf_data["name"],
-                image_name_url=url(conf_data["name"]),
-                image_urimage_name_url2l2=doubleUrl(conf_data["name"]),
+                image_name_url=makeUrl(conf_data["name"]),
 
                 image_colored_name=conf_data["colored_name"] if has_colored_version else "",
-                image_colored_name_url=url(conf_data["colored_name"] if has_colored_version else ""),
-                image_colored_name_url2=doubleUrl(conf_data["colored_name"] if has_colored_version else ""),
+                image_colored_name_url=makeUrl(conf_data["colored_name"] if has_colored_version else ""),
 
                 image_path=image + ".svg",
-                image_path_url=url(image + ".svg"),
-                image_path_url2=doubleUrl(image + ".svg"),
+                image_path_url=makeUrl(image + ".svg"),
 
                 image_compressed_path=image + ".min.svg",
-                image_compressed_path_url=url(image + ".min.svg"),
-                image_compressed_path_url2=doubleUrl(image + ".min.svg"),
+                image_compressed_path_url=makeUrl(image + ".min.svg"),
 
                 image_colored_path=image + ".colored.svg",
-                image_colored_path_url=url(image + ".colored.svg"),
-                image_colored_path_url2=doubleUrl(image + ".colored.svg"),
+                image_colored_path_url=makeUrl(image + ".colored.svg"),
 
                 image_colored_compressed_path=image + ".colored.min.svg",
-                image_colored_compressed_path_url=url(image + ".colored.min.svg"),
-                image_colored_compressed_path_url2=doubleUrl(image + ".colored.min.svg"),
+                image_colored_compressed_path_url=makeUrl(image + ".colored.min.svg"),
 
                 not_colored_template=image_not_colored_template if has_not_colored_version else "",
                 colored_template=image_colored_template_loc if has_colored_version else "",
@@ -256,22 +244,37 @@ def githubPages() -> None:
                 description_text=image_description,
 
                 image_size=image_size,
-                image_size_url=url(image_size),
-                image_size_url2=doubleUrl(image_size),
+                image_size_url=makeUrl(image_size),
 
                 image_compressed_size=image_compressed_size,
-                image_compressed_size_url=url(image_compressed_size),
-                image_compressed_size_url2=doubleUrl(image_compressed_size),
+                image_compressed_size_url=makeUrl(image_compressed_size),
 
                 image_colored_size=image_colored_size,
-                image_colored_size_url=url(image_colored_size),
-                image_colored_size_url2=doubleUrl(image_colored_size),
+                image_colored_size_url=makeUrl(image_colored_size),
 
                 image_colored_compressed_size=image_colored_compressed_size,
-                image_colored_compressed_size_url=url(image_colored_compressed_size),
-                image_colored_compressed_size_url2=doubleUrl(image_colored_compressed_size),
+                image_colored_compressed_size_url=makeUrl(image_colored_compressed_size),
 
-                not_colored_image_shown=" shown" if has_not_colored_version and not has_colored_version else ""
+                not_colored_image_shown=" shown" if has_not_colored_version and not has_colored_version else "",
+
+                beautified_pure="-   [Beautified black-and-white version]({} \"Download beautified black-and-white SVG\")\n".format(
+                    makeUrl(image + ".svg")
+                ) if has_not_colored_version else "",
+                compressed_pure="-   [Compressed black-and-white version]({} \"Download compressed black-and-white SVG\")\n".format(
+                    makeUrl("./src/" + image + ".min.svg")
+                ) if has_not_colored_version else "",
+                beautified_colored="-   [Beautified colored version]({} \"Download beautified colored SVG\")\n".format(
+                    makeUrl(image + ".colored.svg")
+                ) if has_colored_version else "",
+                compressed_colored="-   [Compressed colored version]({} \"Download compressed colored SVG\")\n".format(
+                    makeUrl("./src/" + image + ".colored.min.svg")
+                ) if has_colored_version else "",
+                ai_pure="-   [*Adobe Illustrator* source file]({} \"Download Adobe Illustrator (.ai) source file\")\n".format(
+                    makeUrl("./src/" + image + ".ai")
+                ) if has_not_colored_version else "",
+                ai_colored="-   [*Adobe Illustrator* source file with colors]({} \"Download Adobe Illustrator (.ai) source file with colors\")\n".format(
+                    makeUrl("./src/" + image + ".colored.ai")
+                ) if has_colored_version else ""
             )
 
         # Save
@@ -289,9 +292,9 @@ def githubPages() -> None:
 
     readme_data = readme_data.format(
         average_svg_size=average_svg_size,
-        average_svg_size_url=url(average_svg_size),
+        average_svg_size_url=makeUrl(average_svg_size),
         average_compressed_svg_size=average_compressed_svg_size,
-        average_compressed_svg_size_url=url(average_compressed_svg_size)
+        average_compressed_svg_size_url=makeUrl(average_compressed_svg_size)
     )
 
     with open(makePath(rp, "README.md"), 'w', encoding='utf-8') as file:

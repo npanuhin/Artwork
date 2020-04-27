@@ -8,12 +8,26 @@
 </div>
 
 ## About
-This is a repository of my vector paintings.
-You can use any of these images in your projects, works etc within the confines of the license.
+
+This is a repository of vector images that I made while studying vector graphics (templates were taken from the Internet, but all vector pictures were drawn by me).
 
 **[Start exploring!](./SVG "See SVG images")**
 
 **If you think that you have found a mistake or have sufficiently improved (including minification) something in this repository, you are very welcome to contact me <a href="http://n-panuhin.info" title="Nikita Panuhin" target="_blank">here</a> or directly by [email](mailto:n.panuhin@mail.ru "Mailto: Nikita Panuhin").**
+
+You can use any of these images in your projects, works etc within the confines of the license.
+
+## How to use
+
+Each SVG image has a colored or/and black-and-white version. You can use (download):
+
+-   Beautified colored version
+-   Compressed colored version
+-   Beautified black-and-white version
+-   Compressed black-and-white version
+-   *Adobe Illustrator* source files
+
+Links are located at the bottom of each page.
 
 ## Technical information
 
@@ -22,10 +36,8 @@ You can use any of these images in your projects, works etc within the confines 
 -   PNG files are rendered using the *<a href="https://github.com/neocotic/convert-svg/tree/master/packages/convert-svg-to-png" title="Node.js: convert-svg-to-png by neocotic" target="_blank">convert-svg-to-png</a>* Node.js package by <a href="https://github.com/neocotic" title="Github user: neocotic" target="_blank">neocotic</a>. Render sizes are specified for each image in "SVG/{{image\_name}}/src/conf.json".
 -   The size of any SVG image is calculated without considering the size of the XML header (-40 bytes). SVG version is removed for compressed files (-14 bytes).
 
-## License
-
-The project is licensed under the [MIT License](http://n-panuhin.info/license.html "MIT License").
-
----
+--------------------------------------
 
 Copyright &copy; 2020 Nikita Paniukhin
+
+License: [MIT](http://n-panuhin.info/license.html "Visit n-panuhin.info/license")

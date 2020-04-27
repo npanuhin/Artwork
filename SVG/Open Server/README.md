@@ -4,9 +4,6 @@
 
 <h2><p align="center"><a href="Open Server.colored.svg" title="View & Download Open Server colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
-	<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=http%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FOpen%20Server%2FOpen%20Server.colored.svg" target="_blank" title="W3C validation">
-		<img alt="" src="https://img.shields.io/w3c-validation/xml?preset=SVG%201.1%2C%20URL%2C%20XHTML%2C%20MathML%203.0&targetUrl=http%3A%2F%2Fn-panuhin.info%2Fredirect.php%3Fu%3Dhttp%3A%2F%2Fsvg.n-panuhin.info%2FSVG%2FOpen%2520Server%2FOpen%2520Server.colored.svg">
-	</a>
 	<a href="Open Server.colored.svg" target="_blank" title="File size">
 		<img alt="File size: 1.33 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=1.33%20kB&color=0aa">
 	</a>
@@ -27,3 +24,10 @@ This is the **[Open Server Panel](https://ospanel.io "Visit ospanel.io")** icon.
 ### Template
 
 The template .ico file was taken from .exe file (Open Server x64.exe).
+
+
+### Links
+
+-   [Beautified colored version](Open%20Server.colored.svg "Download beautified colored SVG")
+-   [Compressed colored version](./src/Open%20Server.colored.min.svg "Download compressed colored SVG")
+-   [*Adobe Illustrator* source file with colors](./src/Open%20Server.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
