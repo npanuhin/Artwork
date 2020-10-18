@@ -1,4 +1,4 @@
-[&lt; back to home page](../../../../ "Home page")
+[&lt; back to the SVG list](../ "Home page")
 
 <h1><p align="center">Vector images: Open Server icon</p></h1>
 

@@ -1,6 +1,6 @@
 from typing import List
 
-from json import loads
+from json import load as jsonLoad, loads as jsonLoads
 import os
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -9,8 +9,8 @@ from ast import literal_eval
 from requests import post as req_post
 from time import sleep
 
-import render
-render.TMP_FOLDER = "rendertmp"
+import svg_render
+svg_render.TMP_FOLDER = "rendertmp"
 
 
 XML_HEADER = "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
@@ -24,33 +24,28 @@ def makePath(*paths: List[str]) -> str:
 
 
 def minify(code: str) -> str:
-    r = req_post("http://htmlcompressor.com/compress_ajax_v2.php", data={
+    r = req_post("https://htmlcompressor.com/compress", data={
         "code_type": "html",
+        "output_format": "text",
+        "code": code,
+
         "html_level": 3,
-        "html_keep_quotes": 1,
-        "minimize_style": 1,
-        "minimize_events": 1,
-        "minimize_js_href": 1,
-        "minimize_css": 1,
-        "minimize_js": 1,
-        "js_engine": "yui",
-        "js_fallback": 1,
-        "js_yui_nomunge": 1,
-        "js_yui_verbose": 1,
-        "code": code
+        "html_single_line": True,
+        "html_keep_quotes": True,
+        "minimize_style": True,
+        "keep_comments": False,
+        "minimize_css": True,
     }).text
 
     sleep(request_sleep_time)
 
     try:
-        r = loads(r)
+        r = jsonLoads(r)
+        print("\nWarning! Can not handle result from htmlcompressor.com\n")
     except Exception:
-        print("Warning! Can not handle result from htmlcompressor.com")
-        return False
+        pass
 
-    if "success" not in r or not r["success"] or "result" not in r:
-        return False
-    return r["result"]
+    return r
 
 
 def prettifySize(value: int) -> str:
@@ -77,7 +72,7 @@ def checkGithubPages(image: str) -> bool:
     if not os.path.exists(makePath(root_path, "SVG", image, "src/conf.json")):
         return False
     with open(makePath(root_path, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
-        conf_data = loads(conf_file.read(), encoding="utf-8")
+        conf_data = jsonLoad(conf_file, encoding="utf-8")
     if ("github_pages" not in conf_data or
         not isinstance(conf_data["github_pages"], dict) or
         "status" not in conf_data["github_pages"] or
@@ -99,7 +94,7 @@ def githubPages() -> None:
     svg_files_count = 0
 
     # ---SVG list---
-    with open(makePath(rp, "src/templates/SVG.md"), 'r', encoding='utf-8') as file:
+    with open(makePath(rp, "src/templates/svg_list.md"), 'r', encoding='utf-8') as file:
         svg_md = file.read().strip()
 
     images = []
@@ -108,13 +103,11 @@ def githubPages() -> None:
         if checkGithubPages(image):
             images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=makeUrl(image)))
 
-    # Save
     with open(makePath(rp, "SVG/README.md"), 'w', encoding='utf-8') as file:
         file.write(svg_md + "\n\n" + "\n".join(images))
 
     print("Created README.md with list of SVG images")
 
-    #
     # ---Images---
     with open(makePath(rp, "src/templates/image.md"), 'r', encoding='utf-8') as image_template_file, \
             open(makePath(rp, "src/templates/not_colored_image.md"), 'r', encoding="utf-8") as image_not_colored_template_file, \
@@ -131,7 +124,7 @@ def githubPages() -> None:
             os.remove(makePath(rp, "SVG", image, "README.md"))
 
         with open(makePath(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
-            conf_data = loads(conf_file.read(), encoding="utf-8")['github_pages']
+            conf_data = jsonLoad(conf_file, encoding="utf-8")['github_pages']
 
         has_not_colored_version = (image + ".svg" in os.listdir(makePath(rp, "SVG", image)))
         has_colored_version = (image + ".colored.svg" in os.listdir(makePath(rp, "SVG", image)))
@@ -284,23 +277,23 @@ def githubPages() -> None:
         print("Created README.md for {name}".format(name=image))
 
     # ---Main README---
-    with open(makePath(rp, "src/templates/MAIN.md"), 'r', encoding='utf-8') as file:
-        readme_data = file.read().strip()
+    # with open(makePath(rp, "src/templates/MAIN.md"), 'r', encoding='utf-8') as file:
+    #     readme_data = file.read().strip()
 
-    average_svg_size = prettifySize(total_svg_size / svg_files_count)
-    average_compressed_svg_size = prettifySize(total_compressed_svg_size / svg_files_count)
+    # average_svg_size = prettifySize(total_svg_size / svg_files_count)
+    # average_compressed_svg_size = prettifySize(total_compressed_svg_size / svg_files_count)
 
-    readme_data = readme_data.format(
-        average_svg_size=average_svg_size,
-        average_svg_size_url=makeUrl(average_svg_size),
-        average_compressed_svg_size=average_compressed_svg_size,
-        average_compressed_svg_size_url=makeUrl(average_compressed_svg_size)
-    )
+    # readme_data = readme_data.format(
+    #     average_svg_size=average_svg_size,
+    #     average_svg_size_url=makeUrl(average_svg_size),
+    #     average_compressed_svg_size=average_compressed_svg_size,
+    #     average_compressed_svg_size_url=makeUrl(average_compressed_svg_size)
+    # )
 
-    with open(makePath(rp, "README.md"), 'w', encoding='utf-8') as file:
-        file.write(readme_data.strip())
+    # with open(makePath(rp, "README.md"), 'w', encoding='utf-8') as file:
+    #     file.write(readme_data.strip())
 
-    print("Created README.md for repository")
+    # print("Created README.md for repository")
 
 
 def renderAll() -> None:
@@ -315,7 +308,7 @@ def renderAll() -> None:
             continue
 
         with open(makePath(rp, "SVG", image, "src/conf.json"), 'r', encoding="utf-8") as conf_file:
-            conf_data = loads(conf_file.read(), encoding="utf-8")
+            conf_data = jsonLoad(conf_file, encoding="utf-8")
             if "render_sizes" not in conf_data:
                 continue
             sizes = conf_data["render_sizes"]
@@ -383,10 +376,10 @@ def renderAll() -> None:
 
                 if x is None:
                     # Render using height
-                    render.renderSvg(svg_path, output_path, height=y)
+                    svg_render.renderSvg(svg_path, output_path, height=y)
                 else:
                     # Render using width
-                    render.renderSvg(svg_path, output_path, width=x)
+                    svg_render.renderSvg(svg_path, output_path, width=x)
 
                 # Result image sizes
                 result_width, result_height = Image.open(output_path).size
