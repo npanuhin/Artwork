@@ -2,9 +2,9 @@
 
 <h1><p align="center">3D projects: Tropical scene</p></h1>
 
-<h3><p align="center"><a href="result.png" title="View & Download image">View & Download image</a></p></h3>
+<h3><p align="center"><a href="Tropical scene.png" title="View & Download image">View & Download image</a></p></h3>
 
-<img src="result.png" alt="***There should be an image here***" title="Tropical scene">
+<img src="Tropical scene.png" alt="***There should be an image here***" title="Tropical scene">
 
 ## Description
 
