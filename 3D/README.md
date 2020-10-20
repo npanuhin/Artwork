@@ -4,3 +4,4 @@
 
 -   [Tropical scene](./Tropical&#32;scene "Visit &#34;Tropical scene&#34; project page")
 -   [Earth](./Earth "Visit &#34;Earth&#34; project page")
+-   [Hard-Surface modeling](./Hard-Surface&#32;modeling "Visit &#34;Hard-Surface modeling&#34; project page")
