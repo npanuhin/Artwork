@@ -1,4 +1,4 @@
-[&lt; back to the SVG list](../ "Home page")
+[&lt; back to the 3D projects list](../ "3D projects list")
 
 <h1><p align="center">3D projects: Earth</p></h1>
 

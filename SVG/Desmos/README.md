@@ -1,4 +1,4 @@
-[&lt; back to the SVG list](../ "Home page")
+[&lt; back to the SVG list](../ "SVG list")
 
 <h1><p align="center">Vector images: Desmos icon</p></h1>
 

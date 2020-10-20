@@ -1,10 +1,10 @@
-[&lt; back to the SVG list](../ "Home page")
+[&lt; back to the 3D projects list](../ "3D projects list")
 
 <h1><p align="center">3D projects: Hard-Surface modeling</p></h1>
 
 <h3><p align="center"><a href="Hard-Surface modeling.mp4" title="View & Download animation">View & Download animation</a></p></h3>
 
-[![Hard-Surface modeling](preview.jpg)](Hard-Surface&#32;modeling.mp4 "Hard-Surface modeling")
+![Hard-Surface modeling](Hard-Surface&#32;modeling.gif "Hard-Surface modeling")
 
 ## Description
 

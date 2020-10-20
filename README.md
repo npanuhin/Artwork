@@ -1,7 +1,7 @@
 <h1 class="gp_hidden"><p align="center">Artwork</p></h1>
 
 <!-- <div class="badges gp_hidden" align="center">
-	<a href="http://n-panuhin.info/license.html" target="_blank" title="license: MIT"><img alt="license: MIT" src="https://img.shields.io/static/v1?cacheSeconds=604800&style=flat&label=license&message=MIT&color=informational"></a>
+	<a href="https://npanuhin.me/license.html" target="_blank" title="license: MIT"><img alt="license: MIT" src="https://img.shields.io/static/v1?cacheSeconds=604800&style=flat&label=license&message=MIT&color=informational"></a>
 </div> -->
 
 ## About
@@ -41,10 +41,10 @@ Links are located at the bottom of each page.
 
 --------------------------------------
 
-If you find a bug/mistake or have any suggestions, you can contact me <a href="http://n-panuhin.info" title="Nikita Panuhin" target="_blank">here</a> or directly by [email](mailto:n.panuhin@mail.ru "Mailto: Nikita Panuhin").
+If you find a bug/mistake or have any suggestions, you can contact me <a href="https://npanuhin.me" title="npanuhin.me" target="_blank">here</a> or directly by [email](mailto:n.panuhin@mail.ru "Mailto: Nikita Panuhin").
 
 --------------------------------------
 
 Copyright &copy; 2020 Nikita Paniukhin
 
-License: [MIT](http://n-panuhin.info/license.html "Visit n-panuhin.info/license")
+License: [MIT](https://npanuhin.me/license.html "Visit npanuhin.me/license")
