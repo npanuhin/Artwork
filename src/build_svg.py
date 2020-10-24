@@ -134,7 +134,7 @@ def githubPages() -> None:
             with open(makePath(rp, "SVG", image, "src/template.md"), 'r', encoding="utf-8") as file:
                 image_template = file.read().strip()
                 if image_template:
-                    image_template = image_template + "\n"
+                    image_template = image_template + "\n\n"
         else:
             image_template = ""
 
@@ -143,7 +143,7 @@ def githubPages() -> None:
             with open(makePath(rp, "SVG", image, "src/description.md"), 'r', encoding="utf-8") as file:
                 image_description = file.read().strip()
                 if image_description:
-                    image_description = image_description + "\n"
+                    image_description = image_description + "\n\n"
         else:
             image_description = ""
 

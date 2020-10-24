@@ -40,7 +40,6 @@
 
 This is the oficial **[Facebook](https://facebook.com "Facebook")** icon.
 
-
 ### Links
 
 -   [Beautified colored version](Facebook.colored.svg "Download beautified colored SVG")

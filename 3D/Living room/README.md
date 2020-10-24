@@ -13,4 +13,4 @@ Following the [tutorial](https://www.youtube.com/watch?v=8XZQhLRQTDw).
 ### Links
 
 -   [Blender project file](Living&#32;room.blend "Download Blender project file")
--	[Textures](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/npanuhin/Artwork/tree/master/3D/Living%20room/Textures "Download Textures")
+-   [Textures](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/npanuhin/Artwork/tree/master/3D/Living%20room/Textures "Download Textures")

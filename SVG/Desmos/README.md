@@ -21,7 +21,6 @@
 
 This is the **[Desmos graphing calculator](https://www.desmos.com "Visit desmos.com")** icon.
 
-
 ### Links
 
 -   [Beautified colored version](Desmos.colored.svg "Download beautified colored SVG")

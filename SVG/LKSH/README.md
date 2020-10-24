@@ -40,7 +40,6 @@
 
 This is one of the **[LKSH](https://lksh.ru "Visit lksh.ru")** logos.
 
-
 ### Links
 
 -   [Beautified colored version](LKSH.colored.svg "Download beautified colored SVG")
