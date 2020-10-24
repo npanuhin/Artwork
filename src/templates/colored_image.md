@@ -9,6 +9,6 @@
 </div>
 <div>
 	<br>
-	<img src="{image_colored_path}" alt="{image_colored_name}" title="{image_colored_name}">
+	<img src="{image_colored_path}" alt="***There should be an image here***" title="{image_colored_name}">
 	<br>
 </div>

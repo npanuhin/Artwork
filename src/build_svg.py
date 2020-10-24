@@ -101,7 +101,7 @@ def githubPages() -> None:
 
     for image in os.listdir(makePath(rp, "SVG")):
         if checkGithubPages(image):
-            images.append("-   [{name}](./{url} \"See {name} SGV image\")".format(name=image, url=makeUrl(image)))
+            images.append("-   [{name}](./{url} \"See {name} SVG image\")".format(name=image, url=makeUrl(image)))
 
     with open(makePath(rp, "SVG/README.md"), 'w', encoding='utf-8') as file:
         file.write(svg_md + "\n\n" + "\n".join(images))
@@ -129,6 +129,7 @@ def githubPages() -> None:
         has_not_colored_version = (image + ".svg" in os.listdir(makePath(rp, "SVG", image)))
         has_colored_version = (image + ".colored.svg" in os.listdir(makePath(rp, "SVG", image)))
 
+        # Getting image template
         if os.path.exists(makePath(rp, "SVG", image, "src/template.md")):
             with open(makePath(rp, "SVG", image, "src/template.md"), 'r', encoding="utf-8") as file:
                 image_template = file.read().strip()
@@ -137,6 +138,7 @@ def githubPages() -> None:
         else:
             image_template = ""
 
+        # Getting image description
         if os.path.exists(makePath(rp, "SVG", image, "src/description.md")):
             with open(makePath(rp, "SVG", image, "src/description.md"), 'r', encoding="utf-8") as file:
                 image_description = file.read().strip()

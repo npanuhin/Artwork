@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="LKSH.colored.svg" alt="LKSH colored icon" title="LKSH colored icon">
+	<img src="LKSH.colored.svg" alt="***There should be an image here***" title="LKSH colored icon">
 	<br>
 </div>
 <h2><p align="center"><a href="LKSH.svg" title="View & Download LKSH icon">Pure SVG</a></p></h2>
@@ -30,7 +30,7 @@
 		</div>
 		<div>
 			<br>
-			<img src="LKSH.svg" alt="LKSH icon" title="LKSH icon">
+			<img src="LKSH.svg" alt="***There should be an image here***" title="LKSH icon">
 			<br>
 		</div>
 	</div>
@@ -39,7 +39,6 @@
 ## Description
 
 This is one of the **[LKSH](https://lksh.ru "Visit lksh.ru")** logos.
-
 
 
 ### Links

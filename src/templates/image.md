@@ -6,7 +6,6 @@
 
 {description_text}
 {template_text}
-
 ### Links
 
 {beautified_colored}{compressed_colored}{beautified_pure}{compressed_pure}{ai_pure}{ai_colored}

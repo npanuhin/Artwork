@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Pastebin.colored.svg" alt="Pastebin colored icon" title="Pastebin colored icon">
+	<img src="Pastebin.colored.svg" alt="***There should be an image here***" title="Pastebin colored icon">
 	<br>
 </div>
 
@@ -24,7 +24,6 @@ This is the official **[Pastebin](https://pastebin.com "Visit pastebin.com")** l
 ### Template
 
 The [template PNG file](https://pastebin.com/i/pastebin_logo_side_outline.png "See template PNG file") was taken from [pastebin.com](https://pastebin.com "Visit pastebin.com") home page logo.
-
 
 ### Links
 

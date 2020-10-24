@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Codeforces.colored.svg" alt="Codeforces colored icon" title="Codeforces colored icon">
+	<img src="Codeforces.colored.svg" alt="***There should be an image here***" title="Codeforces colored icon">
 	<br>
 </div>
 <h2><p align="center"><a href="Codeforces.svg" title="View & Download Codeforces icon">Pure SVG</a></p></h2>
@@ -30,7 +30,7 @@
 		</div>
 		<div>
 			<br>
-			<img src="Codeforces.svg" alt="Codeforces icon" title="Codeforces icon">
+			<img src="Codeforces.svg" alt="***There should be an image here***" title="Codeforces icon">
 			<br>
 		</div>
 	</div>
@@ -43,7 +43,6 @@ This is the oficial **[Codeforces](https://codeforces.com "Visit codeforces.com"
 ### Template
 
 The [template SVG image](https://github.com/yammadev/brand-icons/blob/master/svg/codeforces.svg "See template SVG file") was taken from *[brand-icons](https://github.com/yammadev/brand-icons "See 'brand-icons' by yammadev")*, owned by **[yammadev](https://github.com/yammadev "Github user: yammadev")**
-
 
 ### Links
 

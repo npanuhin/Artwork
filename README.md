@@ -6,7 +6,7 @@
 
 ## About
 
-This is a repository of my artwork that I made while studying vector graphics and 3D modeling. For vector graphics, the templates were taken from the Internet, but I drew all the vector images myself.
+This is a repository of my artwork that I made while studying vector graphics and 3D modeling
 
 --------------------------------------
 
@@ -17,6 +17,8 @@ This is a repository of my artwork that I made while studying vector graphics an
 --------------------------------------
 
 You can use everything in this repository in your projects, works, etc. within the confines of the license.
+
+For vector graphics, the templates were taken from the Internet, but I drew all the vector images myself.
 
 ### Vector graphics
 
@@ -29,8 +31,6 @@ Each SVG image has a colored or/and black-and-white version. You can download:
 Links are located at the bottom of each page.
 
 ### 3D modeling
-
-
 
 ### Some technical information
 

@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="ColorPicker.colored.svg" alt="ColorPicker colored icon" title="ColorPicker colored icon">
+	<img src="ColorPicker.colored.svg" alt="***There should be an image here***" title="ColorPicker colored icon">
 	<br>
 </div>
 
@@ -24,7 +24,6 @@ This is the **[colorpicker.me](https://colorpicker.me "Visit colorpicker.me")** 
 ### Template
 
 The template .ico file was taken from [colorpicker.me](https://colorpicker.me "Visit colorpicker.me") favicon.
-
 
 ### Links
 

@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Sublime Merge.colored.svg" alt="Sublime Merge colored icon" title="Sublime Merge colored icon">
+	<img src="Sublime Merge.colored.svg" alt="***There should be an image here***" title="Sublime Merge colored icon">
 	<br>
 </div>
 
@@ -24,7 +24,6 @@ This is the oficial **[Sublime Merge](https://www.sublimemerge.com "Visit sublim
 ### Template
 
 The [template PNG image](https://www.sublimehq.com/images/sublime_merge.png "See template PNG file") was taken from [Sublime HQ](https://www.sublimehq.com "Visit sublimehq.com") website.
-
 
 ### Links
 

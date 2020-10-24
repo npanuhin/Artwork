@@ -12,7 +12,7 @@
 		</div>
 		<div>
 			<br>
-			<img src="{image_path}" alt="{image_name}" title="{image_name}">
+			<img src="{image_path}" alt="***There should be an image here***" title="{image_name}">
 			<br>
 		</div>
 	</div>

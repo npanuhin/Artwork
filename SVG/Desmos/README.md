@@ -13,14 +13,13 @@
 </div>
 <div>
 	<br>
-	<img src="Desmos.colored.svg" alt="Desmos colored icon" title="Desmos colored icon">
+	<img src="Desmos.colored.svg" alt="***There should be an image here***" title="Desmos colored icon">
 	<br>
 </div>
 
 ## Description
 
 This is the **[Desmos graphing calculator](https://www.desmos.com "Visit desmos.com")** icon.
-
 
 
 ### Links

@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Open Server.colored.svg" alt="Open Server colored icon" title="Open Server colored icon">
+	<img src="Open Server.colored.svg" alt="***There should be an image here***" title="Open Server colored icon">
 	<br>
 </div>
 
@@ -24,7 +24,6 @@ This is the **[Open Server Panel](https://ospanel.io "Visit ospanel.io")** icon.
 ### Template
 
 The template .ico file was taken from .exe file (Open Server x64.exe).
-
 
 ### Links
 

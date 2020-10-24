@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Sublime Text.colored.svg" alt="Sublime Text colored icon" title="Sublime Text colored icon">
+	<img src="Sublime Text.colored.svg" alt="***There should be an image here***" title="Sublime Text colored icon">
 	<br>
 </div>
 
@@ -24,7 +24,6 @@ This is the oficial **[Sublime Text](https://www.sublimetext.com "Visit sublimet
 ### Template
 
 The [template PNG image](https://www.sublimehq.com/images/sublime_text.png "See template PNG file") was taken from [Sublime HQ](https://www.sublimehq.com "Visit sublimehq.com") website.
-
 
 ### Links
 

@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Lexilize.colored.svg" alt="Lexilize colored icon" title="Lexilize colored icon">
+	<img src="Lexilize.colored.svg" alt="***There should be an image here***" title="Lexilize colored icon">
 	<br>
 </div>
 
@@ -24,7 +24,6 @@ This is the **[Lexilize Flashcards](http://lexilize.com "Visit lexilize.com")** 
 ### Template
 
 The template JPG image was taken from [vk.com/lexilize](https://vk.com/lexilize "Visit vk.com/lexilize").
-
 
 ### Links
 

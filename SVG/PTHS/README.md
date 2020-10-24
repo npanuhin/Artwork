@@ -16,7 +16,7 @@
 		</div>
 		<div>
 			<br>
-			<img src="PTHS.svg" alt="PTHS icon" title="PTHS icon">
+			<img src="PTHS.svg" alt="***There should be an image here***" title="PTHS icon">
 			<br>
 		</div>
 	</div>
@@ -29,7 +29,6 @@ This is the **[PTHS (Physical-Technical High School)](http://school.ioffe.ru "Vi
 ### Template
 
 The [template JPG file](http://www.school.ioffe.ru/album/photos/365.jpg "See template JPG file") was taken from [school.ioffe.ru](http://www.school.ioffe.ru/readings/pths_about_en.html "Visit school.ioffe.ru/readings/pths_about_en.html") "about" page.
-
 
 ### Links
 

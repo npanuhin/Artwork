@@ -13,7 +13,7 @@
 </div>
 <div>
 	<br>
-	<img src="Facebook.colored.svg" alt="Facebook colored icon" title="Facebook colored icon">
+	<img src="Facebook.colored.svg" alt="***There should be an image here***" title="Facebook colored icon">
 	<br>
 </div>
 <h2><p align="center"><a href="Facebook.svg" title="View & Download Facebook icon">Pure SVG</a></p></h2>
@@ -30,7 +30,7 @@
 		</div>
 		<div>
 			<br>
-			<img src="Facebook.svg" alt="Facebook icon" title="Facebook icon">
+			<img src="Facebook.svg" alt="***There should be an image here***" title="Facebook icon">
 			<br>
 		</div>
 	</div>
@@ -39,7 +39,6 @@
 ## Description
 
 This is the oficial **[Facebook](https://facebook.com "Facebook")** icon.
-
 
 
 ### Links
