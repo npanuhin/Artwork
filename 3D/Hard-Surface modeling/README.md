@@ -18,3 +18,4 @@ Following the tutorial: [Part 1](https://www.youtube.com/watch?v=q7fCWyEhSGw) an
 	-	[Part 3](Part3.blend "Download Blender project file")
 	-	[Part 4](Part4.blend "Download Blender project file")
 	-	[Part 5](Part5.blend "Download Blender project file")
+-	[Textures](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/npanuhin/Artwork/tree/master/3D/Hard-Surface%20modeling/Textures "Download Textures")

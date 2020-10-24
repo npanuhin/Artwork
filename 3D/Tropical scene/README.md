@@ -13,3 +13,4 @@ Following the [tutorial](https://www.youtube.com/watch?v=CsNgljHnbhA).
 ### Links
 
 -   [Blender project file](Tropical&#32;scene.blend "Download Blender project file")
+-	[Textures](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/npanuhin/Artwork/tree/master/3D/Tropical%20scene/Textures "Download Textures")

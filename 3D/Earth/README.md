@@ -13,3 +13,4 @@ Following the [tutorial](https://www.youtube.com/watch?v=V4HNIbDn4K4).
 ### Links
 
 -   [Blender project file](Earth.blend "Download Blender project file")
+-	[Textures](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/npanuhin/Artwork/tree/master/3D/Earth/Textures "Download Textures")
