@@ -1,8 +1,8 @@
-[&lt; back to the 3D projects list](../ "3D projects list")
+[< back to the 3D projects list](../ "3D projects list")
 
-<h1><p align="center">3D projects: Earth</p></h1>
+<h1 align="center">3D projects: Earth</h1>
 
-<h3><p align="center"><a href="Earth.png" title="View & Download image">View & Download image</a></p></h3>
+<h3 align="center"><a href="Earth.png" title="View & Download image">View & Download image</a></h3>
 
 <img src="Earth.png" alt="***There should be an image here***" title="Tropical scene">
 

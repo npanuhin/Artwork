@@ -1,6 +1,6 @@
-[&lt; back to the SVG list](../ "SVG list")
+[< back to the SVG list](../ "SVG list")
 
-<h1><p align="center">Vector images: Sublime Merge icon</p></h1>
+<h1 align="center">Vector images: Sublime Merge icon</p></h1>
 
 <h2><p align="center"><a href="Sublime Merge.colored.svg" title="View & Download Sublime Merge colored icon">Colored</a></p></h2>
 <div class="badges" align="center">

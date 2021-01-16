@@ -1,6 +1,6 @@
-[&lt; back to the SVG list](../ "SVG list")
+[< back to the SVG list](../ "SVG list")
 
-<h1><p align="center">Vector images: Lexilize icon</p></h1>
+<h1 align="center">Vector images: Lexilize icon</p></h1>
 
 <h2><p align="center"><a href="Lexilize.colored.svg" title="View & Download Lexilize colored icon">Colored</a></p></h2>
 <div class="badges" align="center">

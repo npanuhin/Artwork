@@ -1,6 +1,6 @@
-[&lt; back to the SVG list](../ "SVG list")
+[< back to the SVG list](../ "SVG list")
 
-<h1><p align="center">Vector images: PTHS icon</p></h1>
+<h1 align="center">Vector images: PTHS icon</p></h1>
 
 <h2><p align="center"><a href="PTHS.svg" title="View & Download PTHS icon">Pure SVG</a></p></h2>
 <div class="spoiler shown">
