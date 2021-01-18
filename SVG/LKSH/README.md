@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: LKSH icon</p></h1>
+<h1 align="center">Vector images: LKSH icon</h1>
 
 <h2><p align="center"><a href="LKSH.colored.svg" title="View & Download LKSH colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -42,9 +42,9 @@ This is one of the **[LKSH](https://lksh.ru "Visit lksh.ru")** logos.
 
 ### Links
 
--   [Beautified colored version](LKSH.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/LKSH.colored.min.svg "Download compressed colored SVG")
--   [Beautified black-and-white version](LKSH.svg "Download beautified black-and-white SVG")
--   [Compressed black-and-white version](./src/LKSH.min.svg "Download compressed black-and-white SVG")
--   [*Adobe Illustrator* source file](./src/LKSH.ai "Download Adobe Illustrator (.ai) source file")
--   [*Adobe Illustrator* source file with colors](./src/LKSH.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](LKSH.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/LKSH.colored.min.svg "Download compressed colored SVG")
+- [Beautified black-and-white version](LKSH.svg "Download beautified black-and-white SVG")
+- [Compressed black-and-white version](./src/LKSH.min.svg "Download compressed black-and-white SVG")
+- [*Adobe Illustrator* source file](./src/LKSH.ai "Download Adobe Illustrator (.ai) source file")
+- [*Adobe Illustrator* source file with colors](./src/LKSH.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

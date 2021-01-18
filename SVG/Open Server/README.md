@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: Open Server icon</p></h1>
+<h1 align="center">Vector images: Open Server icon</h1>
 
 <h2><p align="center"><a href="Open Server.colored.svg" title="View & Download Open Server colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -27,6 +27,6 @@ The template .ico file was taken from .exe file (Open Server x64.exe).
 
 ### Links
 
--   [Beautified colored version](Open%20Server.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/Open%20Server.colored.min.svg "Download compressed colored SVG")
--   [*Adobe Illustrator* source file with colors](./src/Open%20Server.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](Open%20Server.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/Open%20Server.colored.min.svg "Download compressed colored SVG")
+- [*Adobe Illustrator* source file with colors](./src/Open%20Server.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: Pastebin icon</p></h1>
+<h1 align="center">Vector images: Pastebin icon</h1>
 
 <h2><p align="center"><a href="Pastebin.colored.svg" title="View & Download Pastebin colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -27,6 +27,6 @@ The [template PNG file](https://pastebin.com/i/pastebin_logo_side_outline.png "S
 
 ### Links
 
--   [Beautified colored version](Pastebin.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/Pastebin.colored.min.svg "Download compressed colored SVG")
--   [*Adobe Illustrator* source file with colors](./src/Pastebin.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](Pastebin.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/Pastebin.colored.min.svg "Download compressed colored SVG")
+- [*Adobe Illustrator* source file with colors](./src/Pastebin.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

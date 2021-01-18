@@ -101,7 +101,7 @@ def githubPages() -> None:
 
     for image in os.listdir(makePath(rp, "SVG")):
         if checkGithubPages(image):
-            images.append("-   [{name}](./{url} \"See {name} SVG image\")".format(name=image, url=makeUrl(image)))
+            images.append("- [{name}](./{url} \"See {name} SVG image\")".format(name=image, url=makeUrl(image)))
 
     with open(makePath(rp, "SVG/README.md"), 'w', encoding='utf-8') as file:
         file.write(svg_md + "\n\n" + "\n".join(images))
@@ -252,22 +252,22 @@ def githubPages() -> None:
 
                 not_colored_image_shown=" shown" if has_not_colored_version and not has_colored_version else "",
 
-                beautified_pure="-   [Beautified black-and-white version]({} \"Download beautified black-and-white SVG\")\n".format(
+                beautified_pure="- [Beautified black-and-white version]({} \"Download beautified black-and-white SVG\")\n".format(
                     makeUrl(image + ".svg")
                 ) if has_not_colored_version else "",
-                compressed_pure="-   [Compressed black-and-white version]({} \"Download compressed black-and-white SVG\")\n".format(
+                compressed_pure="- [Compressed black-and-white version]({} \"Download compressed black-and-white SVG\")\n".format(
                     makeUrl("./src/" + image + ".min.svg")
                 ) if has_not_colored_version else "",
-                beautified_colored="-   [Beautified colored version]({} \"Download beautified colored SVG\")\n".format(
+                beautified_colored="- [Beautified colored version]({} \"Download beautified colored SVG\")\n".format(
                     makeUrl(image + ".colored.svg")
                 ) if has_colored_version else "",
-                compressed_colored="-   [Compressed colored version]({} \"Download compressed colored SVG\")\n".format(
+                compressed_colored="- [Compressed colored version]({} \"Download compressed colored SVG\")\n".format(
                     makeUrl("./src/" + image + ".colored.min.svg")
                 ) if has_colored_version else "",
-                ai_pure="-   [*Adobe Illustrator* source file]({} \"Download Adobe Illustrator (.ai) source file\")\n".format(
+                ai_pure="- [*Adobe Illustrator* source file]({} \"Download Adobe Illustrator (.ai) source file\")\n".format(
                     makeUrl("./src/" + image + ".ai")
                 ) if has_not_colored_version else "",
-                ai_colored="-   [*Adobe Illustrator* source file with colors]({} \"Download Adobe Illustrator (.ai) source file with colors\")\n".format(
+                ai_colored="- [*Adobe Illustrator* source file with colors]({} \"Download Adobe Illustrator (.ai) source file with colors\")\n".format(
                     makeUrl("./src/" + image + ".colored.ai")
                 ) if has_colored_version else ""
             )

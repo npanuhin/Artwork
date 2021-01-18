@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: Codeforces icon</p></h1>
+<h1 align="center">Vector images: Codeforces icon</h1>
 
 <h2><p align="center"><a href="Codeforces.colored.svg" title="View & Download Codeforces colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -46,9 +46,9 @@ The [template SVG image](https://github.com/yammadev/brand-icons/blob/master/svg
 
 ### Links
 
--   [Beautified colored version](Codeforces.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/Codeforces.colored.min.svg "Download compressed colored SVG")
--   [Beautified black-and-white version](Codeforces.svg "Download beautified black-and-white SVG")
--   [Compressed black-and-white version](./src/Codeforces.min.svg "Download compressed black-and-white SVG")
--   [*Adobe Illustrator* source file](./src/Codeforces.ai "Download Adobe Illustrator (.ai) source file")
--   [*Adobe Illustrator* source file with colors](./src/Codeforces.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](Codeforces.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/Codeforces.colored.min.svg "Download compressed colored SVG")
+- [Beautified black-and-white version](Codeforces.svg "Download beautified black-and-white SVG")
+- [Compressed black-and-white version](./src/Codeforces.min.svg "Download compressed black-and-white SVG")
+- [*Adobe Illustrator* source file](./src/Codeforces.ai "Download Adobe Illustrator (.ai) source file")
+- [*Adobe Illustrator* source file with colors](./src/Codeforces.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

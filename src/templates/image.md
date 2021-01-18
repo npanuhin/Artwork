@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: {image_name}</p></h1>
+<h1 align="center">Vector images: {image_name}</h1>
 
 {colored_template}{not_colored_template}
 

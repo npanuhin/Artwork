@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: Facebook icon</p></h1>
+<h1 align="center">Vector images: Facebook icon</h1>
 
 <h2><p align="center"><a href="Facebook.colored.svg" title="View & Download Facebook colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -42,9 +42,9 @@ This is the oficial **[Facebook](https://facebook.com "Facebook")** icon.
 
 ### Links
 
--   [Beautified colored version](Facebook.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/Facebook.colored.min.svg "Download compressed colored SVG")
--   [Beautified black-and-white version](Facebook.svg "Download beautified black-and-white SVG")
--   [Compressed black-and-white version](./src/Facebook.min.svg "Download compressed black-and-white SVG")
--   [*Adobe Illustrator* source file](./src/Facebook.ai "Download Adobe Illustrator (.ai) source file")
--   [*Adobe Illustrator* source file with colors](./src/Facebook.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](Facebook.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/Facebook.colored.min.svg "Download compressed colored SVG")
+- [Beautified black-and-white version](Facebook.svg "Download beautified black-and-white SVG")
+- [Compressed black-and-white version](./src/Facebook.min.svg "Download compressed black-and-white SVG")
+- [*Adobe Illustrator* source file](./src/Facebook.ai "Download Adobe Illustrator (.ai) source file")
+- [*Adobe Illustrator* source file with colors](./src/Facebook.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

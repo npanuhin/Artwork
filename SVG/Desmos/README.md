@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: Desmos icon</p></h1>
+<h1 align="center">Vector images: Desmos icon</h1>
 
 <h2><p align="center"><a href="Desmos.colored.svg" title="View & Download Desmos colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -23,6 +23,6 @@ This is the **[Desmos graphing calculator](https://www.desmos.com "Visit desmos.
 
 ### Links
 
--   [Beautified colored version](Desmos.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/Desmos.colored.min.svg "Download compressed colored SVG")
--   [*Adobe Illustrator* source file with colors](./src/Desmos.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](Desmos.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/Desmos.colored.min.svg "Download compressed colored SVG")
+- [*Adobe Illustrator* source file with colors](./src/Desmos.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

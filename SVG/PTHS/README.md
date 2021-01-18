@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: PTHS icon</p></h1>
+<h1 align="center">Vector images: PTHS icon</h1>
 
 <h2><p align="center"><a href="PTHS.svg" title="View & Download PTHS icon">Pure SVG</a></p></h2>
 <div class="spoiler shown">
@@ -32,6 +32,6 @@ The [template JPG file](http://www.school.ioffe.ru/album/photos/365.jpg "See tem
 
 ### Links
 
--   [Beautified black-and-white version](PTHS.svg "Download beautified black-and-white SVG")
--   [Compressed black-and-white version](./src/PTHS.min.svg "Download compressed black-and-white SVG")
--   [*Adobe Illustrator* source file](./src/PTHS.ai "Download Adobe Illustrator (.ai) source file")
+- [Beautified black-and-white version](PTHS.svg "Download beautified black-and-white SVG")
+- [Compressed black-and-white version](./src/PTHS.min.svg "Download compressed black-and-white SVG")
+- [*Adobe Illustrator* source file](./src/PTHS.ai "Download Adobe Illustrator (.ai) source file")

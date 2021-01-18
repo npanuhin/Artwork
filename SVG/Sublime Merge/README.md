@@ -1,6 +1,6 @@
 [< back to the SVG list](../ "SVG list")
 
-<h1 align="center">Vector images: Sublime Merge icon</p></h1>
+<h1 align="center">Vector images: Sublime Merge icon</h1>
 
 <h2><p align="center"><a href="Sublime Merge.colored.svg" title="View & Download Sublime Merge colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
@@ -27,6 +27,6 @@ The [template PNG image](https://www.sublimehq.com/images/sublime_merge.png "See
 
 ### Links
 
--   [Beautified colored version](Sublime%20Merge.colored.svg "Download beautified colored SVG")
--   [Compressed colored version](./src/Sublime%20Merge.colored.min.svg "Download compressed colored SVG")
--   [*Adobe Illustrator* source file with colors](./src/Sublime%20Merge.colored.ai "Download Adobe Illustrator (.ai) source file with colors")
+- [Beautified colored version](Sublime%20Merge.colored.svg "Download beautified colored SVG")
+- [Compressed colored version](./src/Sublime%20Merge.colored.min.svg "Download compressed colored SVG")
+- [*Adobe Illustrator* source file with colors](./src/Sublime%20Merge.colored.ai "Download Adobe Illustrator (.ai) source file with colors")

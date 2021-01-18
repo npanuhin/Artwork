@@ -1,8 +1,4 @@
-<h1 class="gp_hidden"><p align="center">Artwork</p></h1>
-
-<!-- <div class="badges gp_hidden" align="center">
-	<a href="https://npanuhin.me/license.html" target="_blank" title="license: MIT"><img alt="license: MIT" src="https://img.shields.io/static/v1?cacheSeconds=604800&style=flat&label=license&message=MIT&color=informational"></a>
-</div> -->
+<h1 class="gp_hidden" align="center">Artwork</h1>
 
 ## About
 
