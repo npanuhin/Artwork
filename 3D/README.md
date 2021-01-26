@@ -12,3 +12,7 @@
 - [Earth](./Earth "Visit &#34;Earth&#34; project page")
 - [Living room](./Living%20room "Visit &#34;Living room&#34; project page")
 - [Cartoon House](./Cartoon%20House "Visit &#34;Cartoon House&#34; project page")
+
+<p style="font-weight: bold; font-size: 1.2em;">Procedural textures:</p>
+
+- [Lava Cracked Surface](./Procedural%20textures/Lava%20Cracked%20Surface "Visit &#34;Lava Cracked Surface&#34; project page")

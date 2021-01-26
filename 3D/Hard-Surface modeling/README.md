@@ -1,6 +1,6 @@
 [< back to the 3D projects list](../ "3D projects list")
 
-<h1 align="center">3D projects: Hard-Surface modeling</h1>
+<h1 align="center">3D educational projects: Hard-Surface modeling</h1>
 
 <p align="center">
 	<a href="https://www.youtube.com/watch?v=q7fCWyEhSGw" title="Following the tutorial" target="_blank"><img src="https://img.shields.io/static/v1?label=Following%20the%20&message=tutorial&color=orange" alt="Following the tutorial"></a>
