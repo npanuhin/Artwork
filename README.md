@@ -18,6 +18,8 @@ You can use everything in this repository in your projects, works, etc. within t
 
 ### 3D modeling
 
+I use [BES](http://mion.faireal.net/BES "Visit mion.faireal.net/BES") for all long-term renders. It slows down rendering, reducing load on the CPU, which is critical for me.
+
 ##### Some technical information
 
 - I am using [Blender](https://blender.org "Visit blender.org") for modeling 3D scenes and animations.

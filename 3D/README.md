@@ -3,7 +3,8 @@
 <p style="font-weight: bold; font-size: 1.2em;">Educational projects:</p>
 
 - [Hard-Surface modeling](./Hard-Surface%20modeling "Visit &#34;Hard-Surface modeling&#34; project page")
-- [Paint Roller](./Paint%20Roller "Visit &#34;Paint 20Roller&#34; project page")
+- [Paint Roller](./Paint%20Roller "Visit &#34;Paint Roller&#34; project page")
+- [Soft Body Test 1](./Soft%20Body%20Test%201 "Visit &#34;Soft Body Test 1&#34; project page")
 
 
 <p style="font-weight: bold; font-size: 1.2em;">3D scenes:</p>
