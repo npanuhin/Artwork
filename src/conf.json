@@ -1,0 +1,19 @@
+{
+	"render_sizes": {
+        "Icon x16": [null, "16"],
+        "Icon x24": [null, "24"],
+        "Icon x32": [null, "32"],
+        "Icon x40": [null, "40"],
+        "Icon x48": [null, "48"],
+        "Icon x64": [null, "64"],
+        "Icon x96": [null, "96"],
+        "Icon x128": [null, "128"],
+        "Icon x256": [null, "256"],
+        "Image x512": [null, "512"],
+        "Image x1024": [null, "1024"],
+        "Image x2048": [null, "2048"],
+        "Image x4096": [null, "4096"],
+        "Image x8192": [null, "8192"],
+        "Image x16384": [null, "16384"]
+    }
+}

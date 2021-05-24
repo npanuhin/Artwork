@@ -20,6 +20,9 @@ def renderSvg(path_in: str, path_out: str, width: Optional[int] = None, height: 
     if not (width is None) ^ (height is None):
         raise ValueError("One of the parameters \"width\" or \"height\" must be an integer > 0, the other has to be None.")
 
+    if not os.path.isdir(TMP_FOLDER):
+        os.makedirs(TMP_FOLDER)
+
     filename = os.path.splitext(os.path.split(path_in)[1])[0]
     fin = os.path.join(TMP_FOLDER, filename + ".svg")
     fout = os.path.join(TMP_FOLDER, filename + ".png")

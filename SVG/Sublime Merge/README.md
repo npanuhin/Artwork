@@ -5,7 +5,7 @@
 <h2><p align="center"><a href="Sublime Merge.colored.svg" title="View & Download Sublime Merge colored icon">Colored</a></p></h2>
 <div class="badges" align="center">
 	<a href="Sublime Merge.colored.svg" target="_blank" title="File size">
-		<img alt="File size: 1.33 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=1.33%20kB&color=0aa">
+		<img alt="File size: 1.34 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=File%20size&message=1.34%20kB&color=0aa">
 	</a>
 	<a href="./src/Sublime Merge.colored.min.svg" target="_blank" title="File size">
 		<img alt="Compressed file size: 1.26 kB" src="https://img.shields.io/static/v1?cacheSeconds=10800&style=flat&label=Compressed&message=1.26%20kB&color=bb0">
